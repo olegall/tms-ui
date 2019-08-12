@@ -1,0 +1,136 @@
+body {
+	background: linear-gradient(-120deg,/*black,white);*/#d79ce6,#eeecee);
+	padding: 0;
+	margin: 0;
+}
+
+@media (min-height: 645px){
+	.footer {
+		margin-top: 12%;
+	}
+}
+
+.body-content {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background: white;
+	font-family: 'Roboto', sans-serif;
+	width: 60%;
+	height: 968px;
+	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Параметры тени */
+}
+
+.footer {
+	text-align: center;
+}
+
+.logged-in-user {
+	position: relative;
+	padding: 15px 25px 0 0;
+}
+
+
+
+.BIT-TMS {
+	margin-bottom: 3%;
+	font-weight: bold;
+}
+
+.logistian-menu span {
+	cursor: pointer;
+	text-align: center;
+	padding: 15px;
+	color: rgb(185, 54, 218);
+}
+
+.logistian-menu span:nth-child(6) {
+	background: rgb(182, 119, 241);
+	color: white;
+}
+
+
+h1,h2 {
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(182, 119, 241);
+	font-weight: bold;
+}
+
+
+table tbody td {
+	height: 50px;
+}
+
+table tbody tr:first-child td{
+	font-weight: bold;
+}
+
+.logged-in-user {
+	text-align: right;
+}
+
+.table-title {
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.table-title h1 {
+	font-weight: normal;
+}
+
+.list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 3%;
+}
+
+.list-table {
+	min-width: 100%;
+	border-spacing: 0;
+	height: auto;
+}
+
+.list-table tbody tr:nth-child(n+2) {
+	color:rgba(0, 0, 0, 0.4);
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Alegreya Sans', sans-serif; */
+	/* font-family: 'Roboto', sans-serif; */
+	/* font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	font-family: 'Dosis', sans-serif;
+	font-family: 'Kanit', sans-serif;
+	font-family: 'Catamaran', sans-serif;
+	font-family: 'Rajdhani', sans-serif;
+	font-family: 'Assistant', sans-serif;
+	font-family: 'Changa', sans-serif;
+	font-family: 'Advent Pro', sans-serif;
+	font-family: 'Biryani', sans-serif;
+	font-family: 'Martel Sans', sans-serif;
+	font-family: 'Miriam Libre', sans-serif;
+	font-family: 'Dorsa', sans-serif; */
+	/* font-family: 'Source Sans Pro', sans-serif; */
+}
+
+.list-table tbody tr:nth-child(n+2):hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* .list-table tbody tr:nth-child(n+2) td {
+	padding-top: 9px;
+	padding-bottom: 9px;
+} */
+.out {
+	display: none;
+}

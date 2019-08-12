@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html style  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths><head><meta http-equivContent-Type contenttext/html; charsetUTF-8>
+<head>
+    <meta nameviewport contentwidthdevice-width, initial-scale1.0>
+    <title>Home Page – приложение ASP.NET</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-content">
+        <div class="logged-in-user">
+            <span>Логист Ivan Ivanov</span>
+            <img src="images/arrowDown.png" width="20px" height="15px" onclick="goOut()"/>
+            <a href="#" class="out">Выйти</a>
+        </div>
+
+        <div class="BIT-TMS">
+            <h1>БИТ:TMS</h1>
+        </div>
+
+        <div class="logistian-menu">
+            <span><a>Мои задания</a></span>
+            <span><a>Все задания</a></span> 
+            <span><a>Аукцион</a></span> 
+            <span><a>Тендер</a></span> 
+            <span><a>По рейтингу</a></span> 
+            <span><a>В свободном доступе</a></span> 
+            <span><a >Создать задание</a></span>
+            <span><a>Настройки</a></span>
+        </div>
+        <div class="list">
+            <div class="table-title">
+                <h2>Список ТС</h2>
+            </div>
+            <table class="list-table">
+                <tbody>
+                    <tr>
+                        <td>Номер </td>
+                        <td>Дата создания </td>
+                        <td>Тип ТС</td>
+                        <td>Тип кузова ТС</td>
+                        <td>Тип загрузки</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>06.08.2019 12:43:14</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>06.08.2019 12:48:51</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>06.08.2019 15:17:13</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>06.08.2019 15:33:01</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>06.08.2019 15:48:35</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>06.08.2019 15:51:31</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>06.08.2019 16:59:46</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            <p>© 2019 – приложение ASP.NET</p>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function goOut() {
+        if(document.querySelector('.out').style.display == ''){
+            document.querySelector('.out').style.display = 'block';
+            document.querySelector('.out').style.position = "absolute";
+            document.querySelector('.out').style.right = "50px";
+        } else if(document.querySelector('.out').style.display == 'block'){
+            document.querySelector('.out').style.display = '';
+        }
+    }
+</script>
+</html>
