@@ -4,18 +4,12 @@ body {
 	margin: 0;
 }
 
-/* @media (min-height: 645px){
-	.footer {
-		margin-top: 12%;
-	}
-} */
-
 .body-content {
 	margin: 0 auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding-left: 50px;
-	/* padding-right: 50px; */
+	padding-right: 50px;
 	background: white;
 	font-family: 'Roboto', sans-serif;
 	width: 60%;
@@ -23,10 +17,6 @@ body {
 	font-size: 16px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Параметры тени */
-}
-
-.footer {
-	text-align: center;
 }
 
 .logged-in-user {
@@ -53,7 +43,7 @@ body {
 }
 
 .logged-in-user span:nth-child(4) {
-	margin-top: 34px;
+	margin-top: 37px;
 }
 
 .logged-in-user img {
@@ -64,9 +54,11 @@ body {
 	padding: 10px 0 0 0;
 }
 
-.user-data .user-name {
-	margin: 0 0 10px 0;
+.user-name {
+	color: rgb(185, 54, 218);
 }
+
+
 
 .logistian-menu span {
 	cursor: pointer;
@@ -165,27 +157,27 @@ table tbody tr:first-child td{
 }
 
 .checkbox {
-	position:relative;
+	position: relative;
 }
 .checkbox input[type=checkbox] {
-	display:none;
+	display: none;
 }
 .checkbox label:after {
-	content:'';
-	display:block;
-	height:14px;
-	width:14px;
-	border:1px solid rgba(46, 45, 45, 0.3);
-	position:absolute;
-	top:0;
-	left:0;
+	content: '';
+	display: block;
+	height: 14px;
+	width: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .checkbox input[type=checkbox]:checked + label:after {
-	outline:1px solid rgb(182, 119, 241);;
-	border:2px solid rgb(182, 119, 241);
-	width:10px;
-	height:10px;
+	outline: 1px solid rgb(182, 119, 241);;
+	border: 2px solid rgb(182, 119, 241);
+	width: 10px;
+	height: 10px;
 	background: url(images/check_mark.png);
 }
 
@@ -194,11 +186,15 @@ table tbody tr:first-child td{
 }
 
 .list .pagination  span {
-	cursor: pointer;
+	font-size: 14px;
 	padding: 7px 10px 7px 10px;
 	color: rgb(185, 54, 218);
 	border-radius: 5px;
-	border: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.list .pagination span:not(:nth-child(5)) {
+	cursor: pointer;
+	border: 1px solid rgb(182, 119, 241);
 }
 
 .list .pagination span:first-child{
