@@ -13,13 +13,10 @@
 <body>
     <div class="body-content">
         <div class="logged-in-user">
-            <span>Логист Ivan Ivanov</span>
-            <img src="images/arrowDown.png" width="20px" height="15px" onclick="goOut()"/>
+            <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
+            <img src="images/logist.png" width="40px" height="40px" onclick="goOut()"/>
+            <span class="user-name">Логист Ivan Ivanov</span>
             <a href="#" class="out">Выйти</a>
-        </div>
-
-        <div class="BIT-TMS">
-            <h1>БИТ:TMS</h1>
         </div>
 
         <div class="logistian-menu">
@@ -108,7 +105,8 @@
         if(document.querySelector('.out').style.display == ''){
             document.querySelector('.out').style.display = 'block';
             document.querySelector('.out').style.position = "absolute";
-            document.querySelector('.out').style.right = "50px";
+            document.querySelector('.out').style.right = "410px";
+            document.querySelector('.out').style.top = "100px";
         } else if(document.querySelector('.out').style.display == 'block'){
             document.querySelector('.out').style.display = '';
         }

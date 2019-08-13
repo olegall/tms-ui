@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-120deg,/*black,white);*/#d79ce6,#eeecee);
+	background: linear-gradient(-120deg,#d79ce6,#eeecee);
 	padding: 0;
 	margin: 0;
 }
@@ -30,15 +30,22 @@ body {
 }
 
 .logged-in-user {
-	position: relative;
+	display: flex;
 	padding: 15px 25px 0 0;
+	margin: 0 0 40px 0;
 }
 
+.logged-in-user .logo {
+	flex-grow: 1;
+	text-align: left;
+}
 
+.logged-in-user .user-name {
+	padding-top: 1% 
+}
 
-.BIT-TMS {
-	margin-bottom: 3%;
-	font-weight: bold;
+.logged-in-user img {
+	cursor: pointer;
 }
 
 .logistian-menu span {
@@ -46,6 +53,12 @@ body {
 	text-align: center;
 	padding: 15px;
 	color: rgb(185, 54, 218);
+}
+
+.logistian-menu span:nth-child(7),
+.logistian-menu span:nth-child(8) {
+	background: rgb(156, 77, 175);
+	color: white;
 }
 
 .logistian-menu span:nth-child(6) {
@@ -71,10 +84,6 @@ table tbody td {
 
 table tbody tr:first-child td{
 	font-weight: bold;
-}
-
-.logged-in-user {
-	text-align: right;
 }
 
 .table-title {
@@ -124,7 +133,7 @@ table tbody tr:first-child td{
 }
 
 .list-table tbody tr:nth-child(n+2):hover {
-	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 /* .list-table tbody tr:nth-child(n+2) td {
