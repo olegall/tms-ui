@@ -3,6 +3,7 @@
 <head>
     <meta nameviewport contentwidthdevice-width, initial-scale1.0>
     <title>Home Page – приложение ASP.NET</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
@@ -14,9 +15,9 @@
     <div class="body-content">
         <div class="logged-in-user">
             <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
-            <img src="images/real_user.png" width="60px" height="60px" class="user-photo" onclick="goOut()"/>
-            <span class="user-name">Логист Ivan Ivanov</span>
-            <a href="#" class="out">Выйти</a>
+                <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
+                <span class="user-name">Логист Ivan Ivanov</span>
+                <span><img src="images/logout.png" width="30px" height="30px"></span>
         </div>
 
         <div class="logistian-menu">
@@ -31,93 +32,177 @@
         </div>
         <div class="list">
             <div class="table-title">
-                <h2>Список ТС</h2>
+                <h2>Мои задания</h2>
             </div>
             <table class="list-table">
                 <tbody>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check1"/><label for="check1"></label>
+                            </div>
+                        </td>
                         <td>Номер </td>
                         <td>Дата создания </td>
                         <td>Тип ТС</td>
                         <td>Тип кузова ТС</td>
-                        <td>Тип загрузки</td>
+                        <td class="table-title-type-load">Тип загрузки</td>
+                        <td>Источник</td>
+                        <td class="for-button-edit-and-delete"></td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check2"/><label for="check2"></label>
+                            </div>
+                        </td>
                         <td>1</td>
                         <td>06.08.2019 12:43:14</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check3"/><label for="check3"></label>
+                            </div>
+                        </td>
                         <td>2</td>
                         <td>06.08.2019 12:48:51</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check4"/><label for="check4"></label>
+                            </div>
+                        </td>
                         <td>3</td>
                         <td>06.08.2019 15:17:13</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            1С
+                        </td>
+                        <td>
+                            <span><img src="images/pencil-icon.png" alt="Редактировать"/></span>
+                            <span><img src="images/delete-icon.png" alt="Удалить"/></span>
+                        </td>
+                        
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check5"/><label for="check5"></label>
+                            </div>
+                        </td>
                         <td>4</td>
                         <td>06.08.2019 15:33:01</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check6"/><label for="check6"></label>
+                            </div>
+                        </td>
                         <td>5</td>
                         <td>06.08.2019 15:48:35</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check7"/><label for="check7"></label>
+                            </div>
+                        </td>
                         <td>6</td>
                         <td>06.08.2019 15:51:31</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox" class=""/></td>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check8"/><label for="check8"></label>
+                            </div>
+                        </td>
                         <td>7</td>
                         <td>06.08.2019 16:59:46</td>
                         <td>легковой</td>
                         <td>Седан</td>
                         <td>Передняя</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <div class="pagination">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>...</span>
+                <span>10</span>
+            </div>
         </div>
         <div class="footer">
-            <p>© 2019 – приложение ASP.NET</p>
+            <p>© 2019 – приложение</p>
         </div>
     </div>
 </body>
 
 <script type="text/javascript">
-    function goOut() {
-        if(document.querySelector('.out').style.display == ''){
-            document.querySelector('.out').style.display = 'block';
-            document.querySelector('.out').style.position = "absolute";
-            document.querySelector('.out').style.right = "410px";
-            document.querySelector('.out').style.top = "100px";
-        } else if(document.querySelector('.out').style.display == 'block'){
-            document.querySelector('.out').style.display = '';
-        }
-    }
+    // function goOut() {
+    //     if(document.querySelector('.out').style.display == ''){
+    //         document.querySelector('.out').style.display = 'block';
+    //         document.querySelector('.out').style.position = "absolute";
+    //         document.querySelector('.out').style.right = "410px";
+    //         document.querySelector('.out').style.top = "100px";
+    //     } else if(document.querySelector('.out').style.display == 'block'){
+    //         document.querySelector('.out').style.display = '';
+    //     }
+    // }
+
+    // $('.list-table tbody tr:nth-clild(n+2)').mouseover(function () {
+    //     let aa = this;
+    //     debugger;
+    // });
 </script>
 </html>
