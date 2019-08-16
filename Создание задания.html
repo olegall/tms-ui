@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html style  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths><head><meta http-equivContent-Type contenttext/html; charsetUTF-8>
+<head>
+    <meta nameviewport contentwidthdevice-width, initial-scale1.0>
+    <title>Home Page – приложение ASP.NET</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="styles/new task.css" rel="stylesheet">
+    <link href="styles/calendar.css" rel="stylesheet">
+    <script type="text/javascript" src="js/calendar.js" defer></script>
+    <script type="text/javascript" src="js/custom select.js" defer></script>
+</head>
+<body>
+    <div class="body-content">
+        <div class="logged-in-user">
+            <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
+                <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
+                <span>Логист <span class="user-name">Ivan Ivanov</span></span>
+                <span><img src="images/logout.png" width="23px" height="23px"></span>
+        </div>
+
+        <div class="logistian-menu">
+            <span><a>Мои задания</a></span>
+            <span><a>Все задания</a></span> 
+            <span><a>Аукцион</a></span> 
+            <span><a>Тендер</a></span> 
+            <span><a>По рейтингу</a></span> 
+            <span><a>В свободном доступе</a></span> 
+            <span class="active"><a >Создать задание</a></span>
+            <span><a>Настройки</a></span>
+        </div>
+            <div class="table-title">
+                <h2>Новое задание</h2>
+            </div>
+            <form class="claim">
+                <div class="claim-header">
+                    <input id="logistian-id" type="hidden" name="logistianId" value="1">
+                    <div class="date-of-delivery">
+                        <div>
+                            <label class="block">Номер</label>
+                            <input type="text" name="number" title="Номер" value="1" class="number-claim">
+                        </div>
+                        <div>
+                        <label class="block deliryDate">Планируемая дата доставки</label>
+                        <div class="inline-block">
+                            <label>с</label>
+                            <input type="text" name="deliveryDatePlanFrom" class="calendar " id="" value="17.05.2019 15:05">
+                        </div>
+                        <div class="inline-block">
+                            <label>по</label>
+                            <input type="text" name="deliveryDatePlanTo" class="calendar " id="" value="17.05.2019 15:05">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="route-add">
+                        <label class="route-title">Маршрут</label>
+                        <button  type="button" class="add-route-point" title="Добавить маршрут">+</button>
+                    </div>
+                </div>
+                <div class="flexbox route-point">
+                    <div class="button-route button-route-add">
+                        <button type="button" title="Добавить точку маршрута">+</button>
+                    </div>
+                    <div class="region">
+                        <label>Область</label>
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Область</option>
+                                <option value="Рязанская">Рязанская</option>
+                                <option value="Московская">Московская</option>
+                                <option value="Тульская">Тульская</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Населенн.пункт</label>
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Населенн.пункт</option>
+                                <option value="Рязань">Рязань</option>
+                                <option value="Москва">Москва</option>
+                                <option value="Тула">Тула</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="street">
+                        <label>Улица</label>
+                        <div class="custom-select">
+                            <select>
+                                    <option value="0">Улица</option>
+                                    <option value="Гоголя">Гоголя</option>
+                                    <option value="Введенская">Введенская</option>
+                                    <option value="Октябрьская">Октябрьская</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="building">
+                        <label>Дом</label>
+                        <div>
+                            <input class="block" type="text">
+                        </div>
+                    </div>
+                    <div class="button-route button-route-remove">
+                        <button type="button" title="Удалить точку маршрута">-</button>
+                    </div>
+                </div>
+
+                <div class="route-TC">
+                    <div class="body-type">
+                        <label>Тип ТС</label>
+                        <div class="custom-select">
+                            <select>
+                                    <option value="0">10т</option>
+                                    <option value="Гоголя">20т</option>
+                                    <option value="Введенская">30</option>
+                                    <option value="Октябрьская">30т тент</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="weight">
+                        <label>Вес, кг</label>
+                        <div>
+                            <input type="text" class="" title="Вес" placeholder="Вес">
+                        </div>
+                        
+                    </div>
+                    <div class="volume">
+                        <label>Обьем, м<sup>3</sup></label>
+                        <div>
+                            <input type="text" class="" title="Обьем" placeholder="Обьем">
+                        </div>
+                    </div>
+                </div>
+                <span>Поместить</span>
+                <div class="bidding">
+                    <ul>
+                        <li> 
+                            <input type="radio" name="bidding-place"> по рейтингу
+                        </li>
+                        <li>
+                            <input type="radio" name="bidding-place"> тендер
+                        </li>
+                        <li>
+                            <input type="radio" name="bidding-place"> в свобод.доступе
+                        </li>
+                        <li>
+                           <input type="radio" name="bidding-place"> по рейтингу
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="create-claim">Создать</button>
+            </form>
+                    
+        </div>
+</body>
+</html>

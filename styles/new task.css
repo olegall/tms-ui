@@ -1,0 +1,354 @@
+body {
+	background: linear-gradient(-120deg,#d79ce6,#eeecee);
+	padding: 0;
+	margin: 0;
+}
+
+input,
+select {
+	outline: none;
+	padding-left: 10px;
+	color: rgba(0, 0, 0, 0.5);
+	width: 200px;
+	border: 1px solid #a09aa1;
+	border-radius: 5px;
+}
+
+input {
+	height: 26px;
+}
+
+.calendar {
+	width: 140px;
+}
+
+select  {
+	height: 30px;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: rgb(182, 119, 241);
+	color: white;
+	font-size: 16px;
+}
+
+.body-content {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 60px;
+	background: white;
+	font-family: 'Roboto', sans-serif;
+	width: 60%;
+	height: 1100px;
+	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Параметры тени */
+}
+
+.logged-in-user {
+	display: flex;
+	padding: 40px 10px 0 0;
+	margin: 0 0 40px 0;
+}
+
+.logged-in-user .logo {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.logged-in-user .user-photo {
+	border-radius: 30px;
+}
+
+.logged-in-user span:nth-child(n+2) {
+	margin: 30px 0 0 0;
+}
+
+.logged-in-user span:nth-child(3) {
+	padding: 10px 5px 0 5px;
+}
+
+.logged-in-user span:nth-child(4) {
+	margin-top: 37px;
+}
+
+.logged-in-user img {
+	cursor: pointer;
+}
+
+.user-data img {
+	padding: 10px 0 0 0;
+}
+
+.user-name {
+	color: rgb(185, 54, 218);
+}
+
+.logistian-menu span {
+	cursor: pointer;
+	text-align: center;
+	padding: 15px;
+	color: rgb(185, 54, 218);
+}
+
+.logistian-menu .active {
+	background: rgb(182, 119, 241);
+	color: white;
+}
+
+
+h1,h2 {
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(182, 119, 241);
+	font-weight: bold;
+}
+
+.table-title {
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+/*Для создать задание*/
+.deliryDate {
+	width: 100%;
+	text-align: center;
+}
+
+.number-claim {
+	max-width: 90px;
+}
+
+.block {
+	display: block;
+}
+
+.date-of-delivery {
+	display: inline-flex;
+	align-content: center;
+	position: relative;
+	width: 60%;
+	margin: 25px 0 15px 0;
+}
+
+.date-of-delivery label {
+	margin: 0 5px 0 5px;
+}
+
+.date-of-delivery div:first-child {
+	margin-right: 4%;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.flexbox {
+	display: flex;
+}
+
+@media (max-width: 1827px) {
+	.flexbox {
+		flex-wrap: wrap;
+	}
+}
+
+.flexbox  .button-route {
+	display: flex;
+	align-items: center;
+}
+
+.button-route button,
+.add-route-point {
+	width: 30px;
+	height: 29px;
+}
+
+.button-route-add {
+	margin-left: 1.6%;
+}
+
+.route-point div div,
+.route-TC div div{
+	margin-top: 5px;
+}
+
+.route-point {
+	width: 107%;
+	margin-left: -41px;
+	flex-wrap: wrap;
+}
+
+.route-point .region {
+	margin: 0 1% 0 1%;
+}
+
+.route-point .street {
+	margin: 0 1% 0 1%;
+}
+
+.route-point .building {
+	margin: 0 1% 0 0;
+}
+
+.route-point .building input {
+	max-width: 25px;
+}
+
+.route-add {
+	margin: 1.5% 0;
+}
+
+.route-TC {
+	margin: 15px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.route-TC .body-type {
+	margin-left: 2%;
+}
+
+.route-TC .weight {
+	margin-left: 1%;
+}
+
+.route-TC .volume {
+	margin: -4px 0 0 1%;
+}
+
+.bidding {
+	margin: 0 0 3% 0;
+}
+
+.bidding ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin: 10px 0;
+}
+
+.bidding ul li:nth-child(-n+3) {
+	margin-right: 15px;
+	align-items: center;
+} 
+
+.bidding ul li  input[type=radio] {
+	padding-left: 0;
+	-webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2.2px solid lightgray;
+    border-radius: 50%;
+    outline: none;
+}
+
+.bidding ul li input[type='radio']:before {
+	padding-left: 0;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10.2px;
+    margin: 2.4px auto;    
+    border-radius:50%;    
+}
+
+.bidding ul li input[type='radio']:checked:before {
+	background:#ca90d8;
+}
+
+.bidding ul li input[type='radio']:checked {
+	border: 2.2px solid #ca90d8;
+}
+
+.create-claim {
+	width: 150px;
+	padding: 10px;
+}
+
+/*Для создать задание*/
+
+/* Custom select */
+
+.custom-select {
+	font-size: 14px;
+	position: relative;
+	font-family: Arial;
+	width: 210px;
+	height: 30px;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+	top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	user-select: none;
+	padding: 5px;
+}
+
+
+.select-selected {
+	border: 1px solid #a09aa1;
+	padding: 5px;
+	height: 18px;
+	border-radius: 5px;
+}
+
+/*style items (options):*/
+.select-items {
+	position: absolute;
+	background-color: #ffffff;
+	border-right: 1px solid rgba(0, 0, 0, 0.15); 
+	border-left: 1px solid rgba(0, 0, 0, 0.15); 
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.select-items:last-child {
+	border-bottom: 1pxx solid rgba(0, 0, 0, 0.15);
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover {
+	background-color: rgb(182, 119, 241);
+}
+/* Custom select */

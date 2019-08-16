@@ -1,0 +1,184 @@
+body {
+	background: linear-gradient(-120deg,#d79ce6,#eeecee);
+	padding: 0;
+	margin: 0;
+}
+
+input,
+select {
+	outline: none;
+	padding-left: 10px;
+	color: rgba(0, 0, 0, 0.5);
+	width: 200px;
+	border: 1px solid #a09aa1;
+	border-radius: 5px;
+}
+
+input {
+	height: 26px;
+}
+
+select  {
+	height: 30px;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: rgb(182, 119, 241);
+	color: white;
+	font-size: 16px;
+}
+
+.body-content {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 60px;
+	background: white;
+	font-family: 'Roboto', sans-serif;
+	width: 60%;
+	height: 1100px;
+	font-size: 16px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Параметры тени */
+}
+
+.logged-in-user {
+	display: flex;
+	padding: 40px 10px 0 0;
+	margin: 0 0 40px 0;
+}
+
+.logged-in-user .logo {
+	flex-grow: 1;
+	text-align: left;
+}
+
+.logged-in-user .user-photo {
+	border-radius: 30px;
+}
+
+.logged-in-user span:nth-child(n+2) {
+	margin: 30px 0 0 0;
+}
+
+.logged-in-user span:nth-child(3) {
+	padding: 10px 5px 0 5px;
+}
+
+.logged-in-user span:nth-child(4) {
+	margin-top: 37px;
+}
+
+.logged-in-user img {
+	cursor: pointer;
+}
+
+.user-data img {
+	padding: 10px 0 0 0;
+}
+
+.user-name {
+	color: rgb(185, 54, 218);
+}
+
+.logistian-menu span {
+	cursor: pointer;
+	text-align: center;
+	padding: 15px;
+	color: rgb(185, 54, 218);
+}
+
+.logistian-menu .active {
+	background: rgb(182, 119, 241);
+	color: white;
+}
+
+
+h1,h2 {
+	font-weight: 500;
+}
+
+h2 {
+	text-align: center;
+	color: rgb(182, 119, 241);
+	font-weight: bold;
+}
+
+.table-title {
+	width: 100%;
+	margin-bottom: 1%;
+}
+/* Custom select
+
+.custom-select {
+	font-size: 14px;
+	position: relative;
+	font-family: Arial;
+	width: 210px;
+	height: 30px;
+}
+
+.custom-select select {
+	display: none;
+}
+
+
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+	top: 7px;
+}
+
+.select-items div,.select-selected {
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	user-select: none;
+	padding: 5px;
+}
+
+
+.select-selected {
+	border: 1px solid #a09aa1;
+	padding: 5px;
+	height: 18px;
+	border-radius: 5px;
+}
+
+.select-items {
+	position: absolute;
+	background-color: #ffffff;
+	border-right: 1px solid rgba(0, 0, 0, 0.15); 
+	border-left: 1px solid rgba(0, 0, 0, 0.15); 
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+
+.select-items:last-child {
+	border-bottom: 1pxx solid rgba(0, 0, 0, 0.15);
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover {
+	background-color: rgb(182, 119, 241);
+} */
+/* Custom select */

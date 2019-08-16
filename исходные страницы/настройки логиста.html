@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://localhost:51381/Settings/Logistian?logistianId=1 -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page – приложение ASP.NET</title>
+    <link href="./настройки логиста_files/bootstrap.css" rel="stylesheet">
+<link href="./настройки логиста_files/site.css" rel="stylesheet">
+
+    <script src="./настройки логиста_files/modernizr-2.8.3.js.Без названия"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:51381/">Имя приложения</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:51381/Registration">Регистрация</a></li>
+                    <li><a href="http://localhost:51381/Authorization">Войти на сайт</a></li>
+                    <li><a href="http://localhost:51381/">Домашняя страница</a></li>
+                    <li><a href="http://localhost:51381/Home/About">О программе</a></li>
+                    <li><a href="http://localhost:51381/Home/Contact">Контакт</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+<div class="logged-in-user">
+    <h5 class="logged-in">
+        Логист <b>
+            Ivan
+            Ivanov
+        </b>
+    </h5>
+    <input id="logistian-id" type="hidden" value="1">
+    <a href="http://localhost:51381/Authorization">Выйти</a>
+</div>
+<!-- ! убрать полотно через foreach -->
+<div class="logistian-settings">
+    <h1>Настройки логиста</h1>
+    <form action="http://localhost:51381/Settings/Save">
+        <div class="col-lg-6">
+            <label>Период</label><br>
+            <div class="setting-type-container">
+                <!--  -->
+                <label>аукциона</label>
+                <input type="hidden" name="LogistianId" value="1">
+                <input type="text" class="form-control" name="DefaultAuctionPeriod" value="1">
+                <label>тендера</label>
+                <input class="form-control" name="DefaultTenderPeriod" value="1">
+                <label>по рейтингу</label>
+                <input class="form-control" name="DefaultRatingPeriod" value="1">
+                <label>в свободном доступе</label>
+                <input class="form-control" name="DefaultFreePeriod" value="1">
+            </div>
+            <label>Шаг аукциона</label>
+            <input class="form-control" name="DefaultAuctionStep" value="1000">
+            <input class="btn btn-default" type="submit" value="Сохранить">
+        </div>
+    </form>
+
+    <form action="http://localhost:51381/Settings/SaveTrading">
+        <div class="right-column col-lg-6">
+            <input type="hidden" name="logistianId" value="1">
+            <label>Аукцион</label><br>
+            <div class="setting-type-container">
+                <label>выиграл</label>
+                <input class="form-control" name="AuctionWon" value="10">
+                <label>сделал ставку</label>
+                <input class="form-control" name="AuctionBid" value="5">
+                <label>проиграл</label>
+                <input class="form-control" name="AuctionLost" value="-10">
+                <label>отказался до окончания</label>
+                <input class="form-control" name="AuctionRefusedBeforeEnd" value="-5">
+                <label>отказался, если победитель</label>
+                <input class="form-control" name="AuctionRefusedIfWinner" value="-10">
+            </div>
+            <label>Тендер</label><br>
+            <div class="setting-type-container">
+                <label>выиграл</label>
+                <input class="form-control" name="TenderWon" value="10">
+                <label>сделал ставку</label>
+                <input class="form-control" name="TenderBid" value="5">
+                <label>проиграл</label>
+                <input class="form-control" name="TenderLost" value="-10">
+                <label>отказался до окончания</label>
+                <input class="form-control" name="TenderRefusedBeforeEnd" value="-5">
+                <label>отказался, если победитель</label>
+                <input class="form-control" name="TenderRefusedIfWinner" value="-20">
+            </div>
+            <label>Рейтинг</label><br>
+            <div class="setting-type-container">
+                <label>не согласился (проигнорировал)</label>
+                <input class="form-control" name="RatingIgnored" value="-5">
+                <label>отказался</label>
+                <input class="form-control" name="RatingRefused" value="-5">
+                <label>согласился и не отказался</label>
+                <input class="form-control" name="RatingAgreed" value="10">
+                <label>согласился, потом отказался</label>
+                <input class="form-control" name="RatingAgreedRefused" value="-1">
+                <input class="btn btn-default" type="submit" value="Сохранить">
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="./настройки логиста_files/jquery-3.3.1.js.Без названия"></script>
+<script>
+    let host = window.location.href.split("/TMSMVC/")[0];
+    $('.get-details').click(function () {
+        let data = '?id=' + $(this).attr('id');
+        window.location.href = host + '/TMSMVC/Claims/Details' + data;
+    })
+</script>
+        <hr>
+        <footer>
+            <p>© 2019 – приложение ASP.NET</p>
+        </footer>
+    </div>
+
+    <script src="./настройки логиста_files/jquery-3.3.1.js(1).Без названия"></script>
+
+    <script src="./настройки логиста_files/script.js.Без названия"></script>
+
+    
+
+
+</body></html>

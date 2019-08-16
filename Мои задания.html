@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html style  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths><head><meta http-equivContent-Type contenttext/html; charsetUTF-8>
+<head>
+    <meta nameviewport contentwidthdevice-width, initial-scale1.0>
+    <title>Home Page – приложение ASP.NET</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+	<link href="styles/my tasks.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body-content">
+        <div class="logged-in-user">
+            <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
+                <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
+                <span class="">Логист <span class="user-name">Ivan Ivanov</span></span>
+                <span><img src="images/logout.png" width="23px" height="23px"></span>
+        </div>
+
+        <div class="logistian-menu">
+            <span><a>Мои задания</a></span>
+            <span><a>Все задания</a></span> 
+            <span><a>Аукцион</a></span> 
+            <span><a>Тендер</a></span> 
+            <span><a>По рейтингу</a></span> 
+            <span><a>В свободном доступе</a></span> 
+            <span><a >Создать задание</a></span>
+            <span><a>Настройки</a></span>
+        </div>
+        <div class="list">
+            <div class="table-title">
+                <h2>Мои задания</h2>
+            </div>
+            <table class="list-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check1"/><label for="check1"></label>
+                            </div>
+                        </td>
+                        <td>Номер </td>
+                        <td>Источник</td>
+                        <td class="bidding">Торги</td>
+                        <td>Дата создания </td>
+                        <td>Тип ТС</td>
+                        <td>Тип кузова ТС</td>
+                        <td class="table-title-type-load">Тип загрузки</td>
+                        <td class="for-button-edit-and-delete"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check2"/><label for="check2"></label>
+                            </div>
+                        </td>
+                        <td>1</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>Аукцион</td>
+                        <td>06.08.2019 12:43:14</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check3"/><label for="check3"></label>
+                            </div>
+                        </td>
+                        <td>2</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>Тендер</td>
+                        <td>06.08.2019 12:48:51</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check4"/><label for="check4"></label>
+                            </div>
+                        </td>
+                        <td>3</td>
+                        <td>
+                            1С
+                        </td>
+                        <td>В своб. доступе</td>
+                        <td>06.08.2019 15:17:13</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                            <span><img src="images/details.png"></span>
+                            <span><img src="images/pencil-icon1.png" alt="Редактировать"/></span>
+                            <span><img src="images/delete.jpg" alt="Удалить"/></span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check5"/><label for="check5"></label>
+                            </div>
+                        </td>
+                        <td>4</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>По рейтингу</td>
+                        <td>06.08.2019 15:33:01</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check6"/><label for="check6"></label>
+                            </div>
+                        </td>
+                        <td>5</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>В своб. доступе</td>
+                        <td>06.08.2019 15:48:35</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check7"/><label for="check7"></label>
+                            </div>
+                        </td>
+                        <td>6</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>Аукцион</td>
+                        <td>06.08.2019 15:51:31</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check8"/><label for="check8"></label>
+                            </div>
+                        </td>
+                        <td>7</td>
+                        <td>
+                            TMS
+                        </td>
+                        <td>Тендер</td>
+                        <td>06.08.2019 16:59:46</td>
+                        <td>легковой</td>
+                        <td>Седан</td>
+                        <td>Передняя</td>
+                        <td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pagination">
+                <span>&lt;&lt;</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>10</span>
+                <span>&gt;&gt;</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    // function goOut() {
+    //     if(document.querySelector('.out').style.display == ''){
+    //         document.querySelector('.out').style.display = 'block';
+    //         document.querySelector('.out').style.position = "absolute";
+    //         document.querySelector('.out').style.right = "410px";
+    //         document.querySelector('.out').style.top = "100px";
+    //     } else if(document.querySelector('.out').style.display == 'block'){
+    //         document.querySelector('.out').style.display = '';
+    //     }
+    // }
+
+    // $('.list-table tbody tr:nth-clild(n+2)').mouseover(function () {
+    //     let aa = this;
+    //     debugger;
+    // });
+</script>
+</html>

@@ -1,0 +1,79 @@
+/* Календарь */
+.calendar-wrapper {
+    position: absolute;
+    z-index: 1;
+    font-family: arial;
+    width: 220px;
+    background: white;
+    margin-top: 4px;
+    left: 1%;
+}
+
+.calendar-wrapper table {
+    min-width: 100%;
+    text-align: center;
+}
+
+.calendar-wrapper span {
+    margin: 0 5px 10px 10px;
+}
+
+.calendar-wrapper table caption {
+    position: relative;
+    min-width: 100%;
+    padding: 7px 0;
+    border-radius: 8px 8px 0 0;
+    color: white;
+    text-align: center;
+    background: #f75020;
+}
+
+.calendar-wrapper table td {
+    padding: 5px;
+}
+
+.hours,
+.minutes {
+    margin-bottom: 5px;
+    width: 40px;
+    border: none;
+    outline: none;
+}
+
+.ok {
+    border-radius: 0 0 8px 8px;
+    color: white;
+    background: #f75020;
+    min-width: 100%;
+    border: 0;
+    padding: 5px 0 5px 0;
+}
+
+.ok:focus, .calendar-wrapper input:focus {
+    outline: 0;
+}
+
+.previousMonth, .nextMonth, .calendar-wrapper table td, .ok {
+    cursor: pointer;
+}
+
+.previousMonth {
+    position: absolute;
+    left: 0;
+}
+
+.nextMonth {
+    position: absolute;
+    right: 0;
+}
+
+.nextMonth:hover,
+.previousMonth:hover {
+    background-color: #de481d;
+}
+
+.selectedDay {
+    background: #f75020;
+    color: white;
+    border-radius: 20px;
+}
