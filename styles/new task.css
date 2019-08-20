@@ -45,7 +45,6 @@ button {
 	background: white;
 	font-family: 'Roboto', sans-serif;
 	width: 60%;
-	height: 1100px;
 	font-size: 16px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Параметры тени */
@@ -53,7 +52,7 @@ button {
 
 .logged-in-user {
 	display: flex;
-	padding: 40px 10px 0 0;
+	padding: 40px 10px 0 1%;
 	margin: 0 0 40px 0;
 }
 
@@ -76,6 +75,13 @@ button {
 
 .logged-in-user span:nth-child(4) {
 	margin-top: 37px;
+}
+
+.logistian-menu {
+	display: inline-flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .logged-in-user img {
@@ -118,8 +124,15 @@ h2 {
 	margin-bottom: 1%;
 }
 
-/*Для создать задание*/
-.deliryDate {
+.claim {
+	padding-bottom: 2%;
+}
+
+.claim-header {
+	margin-left: 20px;
+}
+
+.deliveryDate-title {
 	width: 100%;
 	text-align: center;
 }
@@ -135,16 +148,31 @@ h2 {
 .date-of-delivery {
 	display: inline-flex;
 	align-content: center;
+	justify-content: center;
 	position: relative;
-	width: 60%;
+	width: 100%;
 	margin: 25px 0 15px 0;
 }
+
+.date-of-delivery .volume {
+	margin: -4px 0 0 1%;
+}
+
+.volume input,
+.weight input {
+	width: 45px;
+}
+
 
 .date-of-delivery label {
 	margin: 0 5px 0 5px;
 }
 
 .date-of-delivery div:first-child {
+	margin-right: 4%;
+}
+
+.date-of-delivery .deliveryDates {
 	margin-right: 4%;
 }
 
@@ -164,11 +192,11 @@ h2 {
 
 .flexbox  .button-route {
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .button-route button,
-.add-route-point {
+.route-add button {
 	width: 30px;
 	height: 29px;
 }
@@ -184,8 +212,9 @@ h2 {
 
 .route-point {
 	width: 107%;
-	margin-left: -41px;
+	margin: 2% 0 2% -41px;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .route-point .region {
@@ -201,11 +230,12 @@ h2 {
 }
 
 .route-point .building input {
-	max-width: 25px;
+	max-width: 40px;
 }
 
 .route-add {
 	margin: 1.5% 0;
+	text-align: center;
 }
 
 .route-TC {
@@ -215,15 +245,11 @@ h2 {
 }
 
 .route-TC .body-type {
-	margin-left: 2%;
+	margin-left: 1.8%;
 }
 
 .route-TC .weight {
 	margin-left: 1%;
-}
-
-.route-TC .volume {
-	margin: -4px 0 0 1%;
 }
 
 .bidding {
@@ -259,7 +285,7 @@ h2 {
     display: block;
     width: 10px;
     height: 10.2px;
-    margin: 2.4px auto;    
+    margin: 2.7px auto;    
     border-radius:50%;    
 }
 
@@ -272,6 +298,7 @@ h2 {
 }
 
 .create-claim {
+	margin-left: 45%;
 	width: 150px;
 	padding: 10px;
 }
@@ -327,7 +354,6 @@ h2 {
 	border-radius: 5px;
 }
 
-/*style items (options):*/
 .select-items {
 	position: absolute;
 	background-color: #ffffff;
@@ -337,18 +363,21 @@ h2 {
 	left: 0;
 	right: 0;
 	z-index: 99;
+	box-shadow:  -1px 19px 17px -11px rgba(0, 0, 0, .5);
 }
 
-.select-items:last-child {
-	border-bottom: 1pxx solid rgba(0, 0, 0, 0.15);
+.select-items div:last-child {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	
+	border-radius: 0 0 5px 5px;
 }
 
-/*hide the items when the select box is closed:*/
 .select-hide {
 	display: none;
 }
 
 .select-items div:hover {
 	background-color: rgb(182, 119, 241);
+	color: white;
 }
 /* Custom select */

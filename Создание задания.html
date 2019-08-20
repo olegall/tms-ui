@@ -40,18 +40,44 @@
                             <label class="block">Номер</label>
                             <input type="text" name="number" title="Номер" value="1" class="number-claim">
                         </div>
-                        <div>
-                        <label class="block deliryDate">Планируемая дата доставки</label>
+                        <div class="deliveryDates">
+                        <label class="block deliveryDate-title">Планируемая дата доставки</label>
                         <div class="inline-block">
                             <label>с</label>
                             <input type="text" name="deliveryDatePlanFrom" class="calendar " id="" value="17.05.2019 15:05">
                         </div>
-                        <div class="inline-block">
+                        <div class="inline-block deliveryDatePlanTo">
                             <label>по</label>
                             <input type="text" name="deliveryDatePlanTo" class="calendar " id="" value="17.05.2019 15:05">
                         </div>
                         </div>
+
+                        <div class="weight">
+                            <label>Вес, кг</label>
+                            <div>
+                                <input type="text" class="" title="Вес">
+                            </div>
+                        </div>
+                        <div class="volume">
+                            <label>Обьем, м<sup>3</sup></label>
+                            <div>
+                                <input type="text" class="" title="Обьем">
+                            </div>
+                        </div>
+                         <div class="body-type">
+                            <label>Тип ТС</label>
+                            <div class="custom-select">
+                            <select>
+                                    <option value="0">10т</option>
+                                    <option value="Гоголя">20т</option>
+                                    <option value="Введенская">30</option>
+                                    <option value="Октябрьская">30т тент</option>
+                            </select>
+                        </div>
                     </div>
+                    </div>
+
+                   
                     <div class="route-add">
                         <label class="route-title">Маршрут</label>
                         <button  type="button" class="add-route-point" title="Добавить маршрут">+</button>
@@ -73,10 +99,10 @@
                         </div>
                     </div>
                     <div>
-                        <label>Населенн.пункт</label>
+                        <label>Населенный пункт</label>
                         <div class="custom-select">
                             <select>
-                                <option value="0">Населенн.пункт</option>
+                                <option value="0">Населенный пункт</option>
                                 <option value="Рязань">Рязань</option>
                                 <option value="Москва">Москва</option>
                                 <option value="Тула">Тула</option>
@@ -100,42 +126,205 @@
                             <input class="block" type="text">
                         </div>
                     </div>
-                    <div class="button-route button-route-remove">
-                        <button type="button" title="Удалить точку маршрута">-</button>
+                    <div class="button-route">
+                        <button type="button"  title="Удалить точку маршрута">-</button>
                     </div>
                 </div>
 
-                <div class="route-TC">
-                    <div class="body-type">
-                        <label>Тип ТС</label>
-                        <div class="custom-select">
-                            <select>
-                                    <option value="0">10т</option>
-                                    <option value="Гоголя">20т</option>
-                                    <option value="Введенская">30</option>
-                                    <option value="Октябрьская">30т тент</option>
-                            </select>
+                <div class="flexbox route-point">
+                        <div class="button-route button-route-add">
+                            <button type="button" title="Добавить точку маршрута">+</button>
                         </div>
-                    </div>
-                    <div class="weight">
-                        <label>Вес, кг</label>
+                        <div class="region">
+                            <label>Область</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Область</option>
+                                    <option value="Рязанская">Рязанская</option>
+                                    <option value="Московская">Московская</option>
+                                    <option value="Тульская">Тульская</option>
+                                </select>
+                            </div>
+                        </div>
                         <div>
-                            <input type="text" class="" title="Вес" placeholder="Вес">
+                            <label>Населенный пункт</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Населенный пункт</option>
+                                    <option value="Рязань">Рязань</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Тула">Тула</option>
+                                </select>
+                            </div>
                         </div>
-                        
+                        <div class="street">
+                            <label>Улица</label>
+                            <div class="custom-select">
+                                <select>
+                                        <option value="0">Улица</option>
+                                        <option value="Гоголя">Гоголя</option>
+                                        <option value="Введенская">Введенская</option>
+                                        <option value="Октябрьская">Октябрьская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building">
+                            <label>Дом</label>
+                            <div>
+                                <input class="block" type="text">
+                            </div>
+                        </div>
+                        <div class="button-route">
+                            <button type="button"  title="Удалить точку маршрута">-</button>
+                        </div>
                     </div>
-                    <div class="volume">
-                        <label>Обьем, м<sup>3</sup></label>
+                <div class="flexbox route-point">
+                        <div class="button-route button-route-add">
+                            <button type="button" title="Добавить точку маршрута">+</button>
+                        </div>
+                        <div class="region">
+                            <label>Область</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Область</option>
+                                    <option value="Рязанская">Рязанская</option>
+                                    <option value="Московская">Московская</option>
+                                    <option value="Тульская">Тульская</option>
+                                </select>
+                            </div>
+                        </div>
                         <div>
-                            <input type="text" class="" title="Обьем" placeholder="Обьем">
+                            <label>Населенный пункт</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Населенный пункт</option>
+                                    <option value="Рязань">Рязань</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Тула">Тула</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="street">
+                            <label>Улица</label>
+                            <div class="custom-select">
+                                <select>
+                                        <option value="0">Улица</option>
+                                        <option value="Гоголя">Гоголя</option>
+                                        <option value="Введенская">Введенская</option>
+                                        <option value="Октябрьская">Октябрьская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building">
+                            <label>Дом</label>
+                            <div>
+                                <input class="block" type="text">
+                            </div>
+                        </div>
+                        <div class="button-route">
+                            <button type="button"  title="Удалить точку маршрута">-</button>
                         </div>
                     </div>
-                </div>
+                <div class="flexbox route-point">
+                        <div class="button-route button-route-add">
+                            <button type="button" title="Добавить точку маршрута">+</button>
+                        </div>
+                        <div class="region">
+                            <label>Область</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Область</option>
+                                    <option value="Рязанская">Рязанская</option>
+                                    <option value="Московская">Московская</option>
+                                    <option value="Тульская">Тульская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Населенный пункт</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Населенный пункт</option>
+                                    <option value="Рязань">Рязань</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Тула">Тула</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="street">
+                            <label>Улица</label>
+                            <div class="custom-select">
+                                <select>
+                                        <option value="0">Улица</option>
+                                        <option value="Гоголя">Гоголя</option>
+                                        <option value="Введенская">Введенская</option>
+                                        <option value="Октябрьская">Октябрьская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building">
+                            <label>Дом</label>
+                            <div>
+                                <input class="block" type="text">
+                            </div>
+                        </div>
+                        <div class="button-route">
+                            <button type="button"  title="Удалить точку маршрута">-</button>
+                        </div>
+                    </div>
+                <div class="flexbox route-point">
+                        <div class="button-route button-route-add">
+                            <button type="button" title="Добавить точку маршрута">+</button>
+                        </div>
+                        <div class="region">
+                            <label>Область</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Область</option>
+                                    <option value="Рязанская">Рязанская</option>
+                                    <option value="Московская">Московская</option>
+                                    <option value="Тульская">Тульская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Населенный пункт</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Населенный пункт</option>
+                                    <option value="Рязань">Рязань</option>
+                                    <option value="Москва">Москва</option>
+                                    <option value="Тула">Тула</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="street">
+                            <label>Улица</label>
+                            <div class="custom-select">
+                                <select>
+                                        <option value="0">Улица</option>
+                                        <option value="Гоголя">Гоголя</option>
+                                        <option value="Введенская">Введенская</option>
+                                        <option value="Октябрьская">Октябрьская</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="building">
+                            <label>Дом</label>
+                            <div>
+                                <input class="block" type="text">
+                            </div>
+                        </div>
+                        <div class="button-route">
+                            <button type="button"  title="Удалить точку маршрута">-</button>
+                        </div>
+                    </div>  
+
                 <span>Поместить</span>
                 <div class="bidding">
                     <ul>
                         <li> 
-                            <input type="radio" name="bidding-place"> по рейтингу
+                            <input type="radio" name="bidding-place" checked> по рейтингу
                         </li>
                         <li>
                             <input type="radio" name="bidding-place"> тендер
