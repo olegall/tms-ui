@@ -14,9 +14,9 @@
     <div class="body-content">
         <div class="logged-in-user">
             <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
-                <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
-                <span>Логист <span class="user-name">Ivan Ivanov</span></span>
-                <span><img src="images/logout.png" width="23px" height="23px"></span>
+            <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
+            <span>Логист <span class="user-name">Ivan Ivanov</span></span>
+            <span><img src="images/logout.png" width="23px" height="23px"></span>
         </div>
 
         <div class="logistian-menu">
@@ -36,13 +36,13 @@
                 <div class="claim-header">
                     <input id="logistian-id" type="hidden" name="logistianId" value="1">
                     <div class="date-of-delivery">
-                        <div>
+                        <div class="number">
                             <label class="block">Номер</label>
                             <input type="text" name="number" title="Номер" value="1" class="number-claim">
                         </div>
                         <div class="deliveryDates">
                         <label class="block deliveryDate-title">Планируемая дата доставки</label>
-                        <div class="inline-block">
+                        <div class="inline-block deliveryDatePlanFrom">
                             <label>с</label>
                             <input type="text" name="deliveryDatePlanFrom" class="calendar " id="" value="17.05.2019 15:05">
                         </div>
@@ -52,16 +52,18 @@
                         </div>
                         </div>
 
-                        <div class="weight">
-                            <label>Вес, кг</label>
-                            <div>
-                                <input type="text" class="" title="Вес">
+                        <div class="WV-TC">
+                            <div class="weight">
+                                <label>Вес, кг</label>
+                                <div>
+                                    <input type="text" class="" title="Вес">
+                                </div>
                             </div>
-                        </div>
-                        <div class="volume">
-                            <label>Обьем, м<sup>3</sup></label>
-                            <div>
-                                <input type="text" class="" title="Обьем">
+                            <div class="volume">
+                                <label>Обьем, м<sup>3</sup></label>
+                                <div>
+                                    <input type="text" class="" title="Обьем">
+                                </div>
                             </div>
                         </div>
                          <div class="body-type">
@@ -78,12 +80,13 @@
                     </div>
 
                    
-                    <div class="route-add">
-                        <label class="route-title">Маршрут</label>
-                        <button  type="button" class="add-route-point" title="Добавить маршрут">+</button>
-                    </div>
+                    
                 </div>
-                <div class="flexbox route-point">
+                <div class="route-add">
+                    <label class="route-title">Маршрут</label>
+                    <!-- <button  type="button" class="add-route-point" title="Добавить маршрут">+</button> -->
+                </div>
+                <div class="route-point">
                     <div class="button-route button-route-add">
                         <button type="button" title="Добавить точку маршрута">+</button>
                     </div>
@@ -98,7 +101,7 @@
                             </select>
                         </div>
                     </div>
-                    <div>
+                    <div class="city">
                         <label>Населенный пункт</label>
                         <div class="custom-select">
                             <select>
@@ -146,7 +149,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div class="city">
                             <label>Населенный пункт</label>
                             <div class="custom-select">
                                 <select>
@@ -193,7 +196,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div class="city">
                             <label>Населенный пункт</label>
                             <div class="custom-select">
                                 <select>
@@ -240,7 +243,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div class="city">
                             <label>Населенный пункт</label>
                             <div class="custom-select">
                                 <select>
@@ -287,7 +290,7 @@
                                 </select>
                             </div>
                         </div>
-                        <div>
+                        <div class="city">
                             <label>Населенный пункт</label>
                             <div class="custom-select">
                                 <select>
@@ -320,7 +323,9 @@
                         </div>
                     </div>  
 
-                <span>Поместить</span>
+                <div class="bidding-title">
+                    <span>Поместить</span>
+                </div>
                 <div class="bidding">
                     <ul>
                         <li> 

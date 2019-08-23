@@ -18,7 +18,7 @@
                 'Май', 'Июнь', 'Июль', 'Август',
                 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
 
-    $('.calendar').on('dblclick',function () {
+    $('.calendar').on('click',function () {
         if($(this).prev().length == 0) 
             $('<p class="for"style="display:none;"></p>').insertBefore(this);
         if($(this).prev() != undefined && $(this).prev()[0].className != "calendar-wrapper") {

@@ -19,7 +19,7 @@ input {
 }
 
 .calendar {
-	width: 140px;
+	width: 120px;
 }
 
 select  {
@@ -41,7 +41,7 @@ button {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	padding-left: 50px;
-	padding-right: 60px;
+	padding-right: 50px;
 	background: white;
 	font-family: 'Roboto', sans-serif;
 	width: 60%;
@@ -52,6 +52,7 @@ button {
 
 .logged-in-user {
 	display: flex;
+	flex-wrap: wrap;
 	padding: 40px 10px 0 1%;
 	margin: 0 0 40px 0;
 }
@@ -146,12 +147,16 @@ h2 {
 }
 
 .date-of-delivery {
-	display: inline-flex;
-	align-content: center;
+	display: grid;
+	/* align-content: center; */
 	justify-content: center;
+	justify-items: end;
 	position: relative;
 	width: 100%;
 	margin: 25px 0 15px 0;
+	grid-template-columns: 0.72fr 350px 200px 216px;
+	/* flex-wrap: wrap; */
+	grid-gap: 10px;
 }
 
 .date-of-delivery .volume {
@@ -163,46 +168,177 @@ h2 {
 	width: 45px;
 }
 
-
-.date-of-delivery label {
-	margin: 0 5px 0 5px;
+.deliveryDatePlanFrom input,
+.deliveryDatePlanTo input,
+.number input,
+.WV-TC input {
+	margin-top: 4px;
 }
 
-.date-of-delivery div:first-child {
-	margin-right: 4%;
+
+
+.date-of-delivery .deliveryDates label,
+.date-of-delivery .WV-TC label {
+	margin: 0 5px 0 5px;
 }
 
 .date-of-delivery .deliveryDates {
 	margin-right: 4%;
 }
 
+.date-of-delivery .WV-TC {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .inline-block {
 	display: inline-block;
 }
 
-.flexbox {
-	display: flex;
+.route-point {
+	display: grid;
+	grid-gap: 5px;
+	width: 107%;
+	margin: 2% 0 2% -41px;
+	flex-wrap: wrap;
 }
 
-@media (max-width: 1827px) {
-	.flexbox {
-		flex-wrap: wrap;
+.button-route {
+	display: flex;
+	align-items: flex-end;
+}
+
+.button-route:first-child {
+	justify-content: flex-end;
+}
+
+.button-route:last-child {
+	justify-content: flex-start;
+}
+
+
+.route-add {
+	margin: 1.5% 0;
+	text-align: center;
+	font-size: 25px;
+	color: rgb(182, 119, 241);
+}
+
+
+@media(min-width:1300px) {
+	.route-point {
+		grid-template-columns: 1fr 1fr 1fr 1fr 0.3fr 1fr;
+	}
+
+	.date-of-delivery .WV-TC  div{
+		padding: 0 5px;
 	}
 }
 
-.flexbox  .button-route {
-	display: flex;
-	align-items: flex-end;
+@media(max-width:1300px) {
+	.date-of-delivery {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+
+	.date-of-delivery .WV-TC {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		padding-left: 10px;
+	}
+
+	.route-point {
+		grid-template-columns: 1fr;
+		padding: 2% 2% 0 3%;
+	}
+
+	.route-point {
+		display: grid;
+		justify-content: end;
+		margin: 2% 0 2% -6.8%;
+	}
+
+	.route-point > div {
+		padding-left: 5px;
+		text-align: -webkit-center;
+	}
+
+	.button-route:first-child,
+	.button-route:last-child {
+		display: none;
+	}
+
+	.city label {
+		position: relative;
+	}
+
+	.city label::before {
+		content: url(../images/button-route-remove.png);
+		left: -80px;
+	}
+	.city label::after {
+		content: url(../images/button-route-add.png);
+		right: -80px;
+	}
+
+	.city label::before,
+	.city label::after {
+		cursor: pointer;
+		position: absolute;
+		top: 24px;
+	}
+
+}
+
+@media(max-width: 1600px) {
+	.date-of-delivery .deliveryDates {
+		text-align: -webkit-center;
+	}
+
+	.date-of-delivery .deliveryDates input {
+		margin-top: 5px;
+	}
+
+	.deliveryDates .deliveryDatePlanFrom label {
+		margin-right: 14px;
+	}
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width:700px) {	
+	.deliveryDates {
+		display: grid;
+	}
+
+	.logged-in-user {
+		justify-content: center;
+	}
+
+	.logged-in-user .logo {
+		width: 100%;
+		text-align: center;
+		margin: 15px 0;
+	}
+
+	.route-add {
+		margin: 15px 0;
+	}
+}
+
+@media (max-width: 1827px) {
+	.route-point {
+		flex-wrap: wrap;
+	}
 }
 
 .button-route button,
 .route-add button {
 	width: 30px;
-	height: 29px;
-}
-
-.button-route-add {
-	margin-left: 1.6%;
+	height: 30px;
 }
 
 .route-point div div,
@@ -210,19 +346,12 @@ h2 {
 	margin-top: 5px;
 }
 
-.route-point {
-	width: 107%;
-	margin: 2% 0 2% -41px;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .route-point .region {
-	margin: 0 1% 0 1%;
+	margin: 0 7% 0 6%;
 }
 
 .route-point .street {
-	margin: 0 1% 0 1%;
+	margin: 0 6% 0 2%;
 }
 
 .route-point .building {
@@ -233,31 +362,24 @@ h2 {
 	max-width: 40px;
 }
 
-.route-add {
-	margin: 1.5% 0;
-	text-align: center;
-}
-
-.route-TC {
-	margin: 15px 0;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.route-TC .body-type {
-	margin-left: 1.8%;
-}
-
-.route-TC .weight {
-	margin-left: 1%;
+.body-type .select-selected {
+	margin-top: 4px;
 }
 
 .bidding {
 	margin: 0 0 3% 0;
 }
 
+.bidding-title {
+	width: 100%;
+	text-align: center;
+	margin: 25px 0 10px 0;
+}
+
 .bidding ul {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -303,8 +425,6 @@ h2 {
 	padding: 10px;
 }
 
-/*Для создать задание*/
-
 /* Custom select */
 
 .custom-select {
@@ -318,7 +438,6 @@ h2 {
 .custom-select select {
 	display: none; /*hide original SELECT element:*/
 }
-
 
 /*style the arrow inside the select element:*/
 .select-selected:after {
