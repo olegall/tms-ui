@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html style  js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths><head><meta http-equivContent-Type contenttext/html; charsetUTF-8>
 <head>
-    <meta nameviewport contentwidthdevice-width, initial-scale1.0>
+    <!-- <meta nameviewport contentwidthdevice-width, initial-scale1.0> -->
     <title>Home Page – приложение ASP.NET</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:3&display=swap" rel="stylesheet">
-    <link href="styles/task details.css" rel="stylesheet">
+    <link href="styles/task details рефакторинг.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script type="text/javascript" src="js/custom select.js" defer></script>
 </head>
 <body>
@@ -40,10 +41,10 @@
                             <span class="date-create-span">22.08.2019 08:53</span> 
                         </div>
                         <div class="planDates">
-                            <label class="block">Планируемая дата <br> доставки</label>
+                            <label class="block">Планируемая дата</label>
                             <div>
-                                <span class="block date-from">22.08.2019 08:53</span> <!--<span class="s">с&nbsp; &nbsp;</span>  -->
-                                <span class="block date-to"> 23.08.2019 08:53</span><!--&nbsp;<span class="po">по</span>  -->
+                                <span class="block date-from">22.08.2019 08:53</span> <br>
+                                <span class="block date-to"> 23.08.2019 08:53</span>
                             </div>
                         </div>
                         <div class="TC">
@@ -79,8 +80,8 @@
             <div class="task-details-TC-hictory"> 
                 
                 <div class="auction-history">
-                        <h2>История проведения аукциона</h4>
                         <table>
+                            <caption>История проведения аукциона</caption>
                             <thead>
                                 <th>Перевозчик</th>
                                 <th>Ставка</th>

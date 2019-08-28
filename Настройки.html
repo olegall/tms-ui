@@ -6,230 +6,127 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:3&display=swap" rel="stylesheet">
     <link href="styles/settings.css" rel="stylesheet">
-    <!-- <link href="styles/calendar.css" rel="stylesheet"> -->
-    <!-- <script type="text/javascript" src="js/calendar.js" defer></script> -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script type="text/javascript" src="js/custom select.js" defer></script>
 </head>
 <body>
     <div class="body-content">
-        <div class="logged-in-user">
-            <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
-                <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
-                <span>Логист <span class="user-name">Ivan Ivanov</span></span>
-                <span><img src="images/logout.png" width="23px" height="23px"></span>
-        </div>
-        <nav class="logistian-menu" id="nav">
-            <ul>
-                <li><a li>Мои задания</a></li>
-                <li><a li>Все задания</a></li> 
-                <li><a li>Аукцион</a></li> 
-                <li><a li>Тендер</a></li> 
-                <li><a li>По рейтингу</a></li> 
-                <li><a >В свободном доступе</a></li> 
-                <li><a li>Создать задание</a></li>
-                <li class="active"><a li>Настройки</a></li>
-            </ul>
-        </nav>
-        <!-- <a href="#nav" class="toggle open"><img src="images/humburger-icon.jpg" width="40px" height="40px" alt="Меню"></a>
-        <nav class="logistian-menu" id="nav">
-            <a class="toggle close" href="#">×</a>
-            <ul>
-                <li><a li>Мои задания</a></li>
-                <li><a li>Все задания</a></li> 
-                <li><a li>Аукцион</a></li> 
-                <li><a li>Тендер</a></li> 
-                <li><a li>По рейтингу</a></li> 
-                <li><a >В свободном доступе</a></li> 
-                <li><a li>Создать задание</a></li>
-                <li class="active"><a li>Настройки</a></li>
-            </ul>
-        </nav> -->
-            <div class="table-title">
-                <h2>Настройки</h2>
-            </div>
+            <div class="logged-in-user">
+                    <span class="logo"><img src="images/logo.png" height="100px" width="100px"></span>
+                    <div class="user-data">
+                        <span><img src="images/real_user.png" width="40px" height="40px" class="user-photo"/></span>
+                        <span>Логист <span class="user-name">Ivan Ivanov</span></span>
+                        <span><img src="images/logout.png" width="23px" height="23px"></span>
+                    </div>
+                </div>
+                <div class="menu">
+                    <span><a>Мои задания</a></span>
+                    <span><a>Все задания</a></span> 
+                    <span><a>Аукцион</a></span> 
+                    <span><a>Тендер</a></span> 
+                    <span><a>По рейтингу</a></span> 
+                    <span><a>В свободном доступе</a></span> 
+                    <span><a >Создать задание</a></span>
+                    <span class="active"><a >Настройки</a></span>
+                </div>
+                <h2 class="title">Настройки</h2>
         <form action="" class="form-settings">
-            <div class="periods">
-                <h4>Период</h4>
-                <table>
-                    <tr>
-                        <td> 
-                           <label>аукциона</label>
-                        </td>
-                        <td> 
-                           <input type="text" value="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                           <label>тендера</label>
-                        </td>
-                        <td> 
-                           <input type="text" value="" > 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                           <label>по рейтингу</label>
-                        </td>
-                        <td> 
-                           <input type="text" value="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td> 
-                           <label>в свободном доступе</label>
-                        </td>
-                        <td> 
-                           <input type="text" value="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h4>Шаг аукциона</h4>
-                        </td>
-                         <td> 
-                           <input type="text" value="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="save-button">
-                            <button type="button">Сохранить</button>
-                        </td>
-                    </tr>
-                </table>
+            <div>
+                <div class="periods">
+                    <h4>Период</h4>
+                    <div>
+                        <label>аукциона</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>тендера</label>
+                        <input type="text" value="" > 
+                    </div>
+                    <div>
+                        <label>по рейтингу</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>в свободном доступе</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <h4>Шаг аукциона</h4>
+                        <input type="text" value="">
+                    </div>
+                    <div class="save-button">
+                        <button type="button">Сохранить</button>
+                    </div>
+                </div>
             </div>
             <div>
                 <div class="auction">
                     <h4>Аукцион</h4>
-                    <table>
-                        <tr>
-                            <td> 
-                            <label>выиграл</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>сделал ставку</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>проиграл</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>отказался до окончания</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>отказался, если победитель</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                    </table>
+                    <div>
+                        <label>выиграл</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>сделал ставку</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>проиграл</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>отказался до окончания</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>отказался, если победитель</label>
+                        <input type="text" value="">
+                    </div>
                 </div>
                 <div class="tender">
                     <h4>Тендер</h4>
-                    <table>
-                        <tr>
-                            <td> 
-                            <label>выиграл</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>сделал ставку</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>проиграл</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>отказался до окончания</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>отказался, если победитель</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                    <div>
+                        <label>выиграл</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>сделал ставку</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>проиграл</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>отказался до окончания</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>отказался, если победитель</label>
+                        <input type="text" value="">
+                    </div>
+                </div> 
                 <div class="rating">
                     <h4>Рейтинг</h4>
-                    <table>
-                        <tr>
-                            <td> 
-                            <label>не согласился (проигнорировал)</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>отказался</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>согласился и не отказался</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                            <label>согласился, потом отказался</label>
-                            </td>
-                            <td> 
-                            <input type="text" value="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="save-button">
-                                <button type="button">Сохранить</button>
-                            </td>
-                        </tr>
-                    </table>
+                    <div> 
+                        <label>не согласился (проигнорировал)</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>отказался</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>согласился и не отказался</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label>согласился, потом отказался</label>
+                        <input type="text" value="">
+                    </div>
+                    <div class="save-button">
+                        <button type="button">Сохранить</button>
+                    </div>
                 </div>
             </div>
         </form>
