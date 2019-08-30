@@ -18,7 +18,7 @@ h2.title {
 input,
 select {
 	outline: none;
-	padding-left: 10px;
+	padding-left: 5px;
 	color: rgba(0, 0, 0, 0.5);
 	width: 50px;
 	border: 1px solid #a09aa1;
@@ -26,8 +26,10 @@ select {
 }
 
 input {
+	padding-left: 0px;
 	height: 26px;
 	text-align: center;
+	width: 39px;
 }
 
 input:focus {
@@ -128,14 +130,30 @@ button {
 	display: block;
 }
 
-.form-settings > div > div > div,
-.form-settings div.periods > div {
+.form-settings > div > div > div {
 	display: grid;
-	grid-template-columns: 1fr 63px;
+	grid-template-columns: 1fr 60px;
 	align-items: center;
 	margin: 10px 0;
 }
 
+.form-settings div.periods > div {
+	grid-template-columns: 1fr 186px;
+}
+
+div.periods > div > div {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+@media (min-width: 600px) {
+	.save-button button {
+		width: auto;
+		padding: 10px 20px;
+	}
+}
 
 @media (max-width: 1400px) {
 	.form-settings {
@@ -171,151 +189,86 @@ button {
 	}
 
 	.form-settings > div {
-		width: 80%;
+		width: 90%;
+	}
+
+	.form-settings > div > div > div {
+		grid-template-columns: 1fr 41px;
 	}
 }
 
-
-/* body {
-	background: linear-gradient(-120deg,#d79ce6,#eeecee);
-	padding: 0;
-	margin: 0;
-}
-
-input,
-select {
-	outline: none;
-	padding-left: 10px;
-	color: rgba(0, 0, 0, 0.5);
-	width: 50px;
-	border: 1px solid #a09aa1;
-	border-radius: 5px;
-}
-
-input {
-	height: 26px;
-	text-align: center;
-}
-
-input:focus {
-	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
-	 			1px 1px 5px rgba(255, 255, 255, 1);
-}
-
-select  {
+/* Custom select */
+.custom-select {
+	font-size: 14px;
+	position: relative;
+	font-family: Arial;
+	width: 90px;
 	height: 30px;
 }
 
-button {
-	outline: none;
+.custom-select select {
+	display: none; 
+}
+
+.custom-select-day {
+	width: 80px;
+}
+
+.select-selected:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	right: 12px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+	border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+	top: 7px;
+}
+
+.select-items div,.select-selected {
+	color: rgba(0, 0, 0, 0.5);
 	cursor: pointer;
-	border: none;
+	user-select: none;
+	padding: 5px;
+}
+
+
+.select-selected {
+	border: 1px solid #a09aa1;
+	padding: 5px;
+	height: 18px;
 	border-radius: 5px;
-	background: rgb(182, 119, 241);
+}
+
+.select-items {
+	position: absolute;
+	background-color: #ffffff;
+	border-right: 1px solid rgba(0, 0, 0, 0.15); 
+	border-left: 1px solid rgba(0, 0, 0, 0.15); 
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+	box-shadow:  -1px 19px 17px -11px rgba(0, 0, 0, .5);
+}
+
+.select-items div:last-child {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	
+	border-radius: 0 0 5px 5px;
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover {
+	background-color: rgb(182, 119, 241);
 	color: white;
-	font-size: 16px;
-	padding: 10px;
 }
-
-.body-content {
-	margin: 0 auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding-left: 50px;
-	padding-right: 60px;
-	background: white;
-	font-family: 'Roboto', sans-serif;
-	width: 60%;
-	font-size: 16px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.logged-in-user {
-	display: flex;
-	padding: 40px 10px 0 0;
-	margin: 0 0 40px 0;
-}
-
-.logged-in-user .logo {
-	flex-grow: 1;
-	text-align: left;
-}
-
-.logged-in-user .user-photo {
-	border-radius: 30px;
-}
-
-.logged-in-user span:nth-child(n+2) {
-	margin: 30px 0 0 0;
-}
-
-.logged-in-user span:nth-child(3) {
-	padding: 10px 5px 0 5px;
-}
-
-.logged-in-user span:nth-child(4) {
-	margin-top: 37px;
-}
-
-.logged-in-user img {
-	cursor: pointer;
-}
-
-.user-data img {
-	padding: 10px 0 0 0;
-}
-
-.user-name {
-	color: rgb(185, 54, 218);
-}
-
-
-
-h1,h2 {
-	font-weight: 500;
-}
-
-h2 {
-	text-align: center;
-	color: rgb(182, 119, 241);
-	font-weight: bold;
-}
-
-.table-title {
-	width: 100%;
-	margin-bottom: 1%;
-}
-
-.form-settings {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	justify-items: center;
-	align-items: stretch;
-}
-
-.form-settings table tr td:first-child {
-	width: 280px;
-	padding: 10px 0 10px 0;
-}
-
-.form-settings table tr td:last-child {
-	text-align: right;
-}
-
-
-.periods, 
-.tender,
-.auction,
-.rating {
-	padding: 10px 93px;
-}
-
-.tender,
-.auction,
-.rating {
-	margin: 0 0 15px 0; 
-}
- */
-
- 
+/* Custom select */

@@ -189,4 +189,8 @@ table tbody tr:nth-child(odd) {
 	.task-details-delivery {
 		grid-template-columns: 1fr;
 	}
+
+	.bidding {
+		text-align: center;
+	}
 }

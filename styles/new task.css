@@ -208,7 +208,8 @@ button {
 	.bidding ul {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(4, 160px);
+		grid-template-columns: 93px 82px 120px 141px;
+		grid-gap: 10px;
 		justify-items: center;
 		justify-content: center;
 		list-style-type: none;
@@ -245,7 +246,7 @@ button {
 
 }
 
-@media(max-width:1300px) {
+@media(max-width:1500px) {
 	.body-content {
 		width: 80%;
 	}
@@ -262,7 +263,7 @@ button {
 		justify-items: baseline;
 	} 
 }
-@media (max-width: 1000px) {	
+@media (max-width: 1050px) {	
 	.route-point {
 		grid-template-columns: 1fr;
 		margin: 25px 0;
@@ -357,19 +358,26 @@ button {
 		 
 	}
 
-	.building label {
+	.building {
 		position: relative;
 	}
 
 	.building label::before {
 		content: url(../images/button-route-remove.png);
-		/* left: -45px; */
-		right: -185px;
 	}
 	
 	.building label::after {
 		content: url(../images/button-route-add.png);
-		right: -222px;
+	}
+
+	.building label::before {
+		content: url(../images/button-route-remove.png);
+		right: 40px;
+	}
+	
+	.building label::after {
+		content: url(../images/button-route-add.png);
+		right: 0px;
 	}
 
 	.building label::before,
@@ -436,12 +444,46 @@ button {
 	}
 }
 
-@media (min-width: 800px) and (max-width: 1100px) {
-	.claim {
+@media (min-width: 700px) and (max-width: 1050px) {
+	.route-point-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-gap: 10px;
+		justify-content: center;
+		grid-gap: 15px;
 	}
+
+	.route-point > div {
+		display: block;
+	}
+
+	.date-of-delivery {
+		grid-template-columns: 1fr 115px 1fr 1fr;
+		align-items: end;
+	}
+
+	.WV-TC .weight, .WV-TC .volume {
+		display: inherit;
+	}
+
+	.deliveryDates label {
+		text-align: center;
+	}
+	
+	.building label::after,
+	.building label::before {
+		top: 18px;
+	}	
+
+	.bidding ul {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.create-claim button {
+		width: 50%;
+	} 
+
+
+
+	
 }
 
 .bidding ul li {

@@ -43,9 +43,9 @@
                         </div>
                     </th>
                     <th>Номер </th>
-                    <th>Источник</th>
+                    <th class="source">Источник</th>
                     <th class="bidding">Торги</th>
-                    <th>Дата создания </th>
+                    <th class="date-create">Дата создания </th>
                     <th>Тип ТС</th>
                     <th class="for-button-edit-and-delete"></th>
                 </thead>
@@ -59,8 +59,8 @@
                         </td>
                         <td aria-label="Номер">386333873641</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">Аукцион</td>
-                        <td aria-label="Дата создания">06.08.2019 12:43:14</td>
+                        <td aria-label="Аукцион">Аукцион</td>
+                        <td aria-label="Дата создания">06.08.19 12:43</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -73,8 +73,8 @@
                         </td>
                         <td aria-label="Номер">804732126251</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">Тендер</td>
-                        <td aria-label="Дата создания">06.08.2019 12:48:51</td>
+                        <td aria-label="Тендер">Тендер</td>
+                        <td aria-label="Дата создания">06.08.19 12:48</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -86,14 +86,14 @@
                             </div>
                         </td>
                         <td aria-label="Номер">84384880752</td>
-                        <td aria-label="Источник"><img src="1C-icon.png" alt="1C"></td>
-                        <td aria-label="Торги">В своб. доступе</td>
-                        <td aria-label="Дата создания">06.08.2019 15:17:13</td>
+                        <td aria-label="Источник"><img src="images/1C-icon.png" alt="1C"></td>
+                        <td aria-label="В свободном доступе">В своб. доступе</td>
+                        <td aria-label="Дата создания">06.08.19 15:17</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                             <span><img src="images/details.png"></span>
-                            <span><img src="images/pencil-icon1.png" alt="Редактировать"/></span>
-                            <span><img src="images/delete.jpg" alt="Удалить"/></span>
+                            <span><img src="images/pencil-icon.png" alt="Редактировать"/></span>
+                            <span><img src="images/delete.png" alt="Удалить"/></span>
                         </td>
                         
                     </tr>
@@ -105,8 +105,8 @@
                         </td>
                         <td aria-label="Номер">2048534924</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">По рейтингу</td>
-                        <td aria-label="Дата создания">06.08.2019 15:33:01</td>
+                        <td aria-label="По рейтингу">По рейтингу</td>
+                        <td aria-label="Дата создания">06.08.19 15:33</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -119,8 +119,8 @@
                         </td>
                         <td aria-label="Номер">7054018053</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">В своб. доступе</td>
-                        <td aria-label="Дата создания">06.08.2019 15:48:35</td>
+                        <td aria-label="В свободном доступе">В своб. доступе</td>
+                        <td aria-label="Дата создания">06.08.19 15:48</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -133,8 +133,8 @@
                         </td>
                         <td aria-label="Номер">5642650182</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">Аукцион</td>
-                        <td aria-label="Дата создания">06.08.2019 15:51:31</td>
+                        <td aria-label="Аукцион">Аукцион</td>
+                        <td aria-label="Дата создания">06.08.19 15:51</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -147,8 +147,8 @@
                         </td>
                         <td aria-label="Номер">6171452111</td>
                         <td aria-label="Источник"><img src="images/logo.png" width="30px" height="30px"  alt="TMS"></td>
-                        <td aria-label="Торги">Тендер</td>
-                        <td aria-label="Дата создания">06.08.2019 16:59:46</td>
+                        <td aria-label="Тендер">Тендер</td>
+                        <td aria-label="Дата создания">06.08.19 16:59</td>
                         <td aria-label="Тип ТС">легковой</td>
                         <td>
                         </td>
@@ -160,10 +160,124 @@
                 <span>1</span>
                 <span>2</span>
                 <span>3</span>
-                <span>10</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
                 <span>&gt;&gt;</span>
             </div>
         </div>
     </div>
 </body>
+<script>
+    let clickCount = 0;
+    // let screenWidth = setInterval(function() {
+    //     screenWidth = screen.width;
+    // },2000);
+
+    if(screen.width < 500) {
+        $('table thead th.source').text('Ист.');
+        $('table thead th.date-create').text('Дата');
+        $('table thead th.bidding').text('Т-ги');
+
+
+        $('table tbody tr:nth-child(1) td:nth-child(4)').text('А');
+        $('table tbody tr:nth-child(6) td:nth-child(4)').text('А');
+        $('table tbody tr:nth-child(2) td:nth-child(4)').text('Т');
+        $('table tbody tr:nth-child(7) td:nth-child(4)').text('Т');
+        $('table tbody tr:nth-child(3) td:nth-child(4)').text('С');
+        $('table tbody tr:nth-child(5) td:nth-child(4)').text('С');
+        $('table tbody tr:nth-child(4) td:nth-child(4)').text('Р');
+        $('table tbody tr td:nth-child(6)').text('легк.');
+    }
+
+    $('table tbody tr').on('click', function () {
+        if($(this).css('background-color') == 'rgba(0, 0, 0, 0)') { // && screen.width < 500
+            $(this).css('background-color', 'rgb(182, 119, 241)');
+            // debugger;
+            $(this.children).css('color', 'white');
+            if($('.selected-cells-count').length == 0) {
+                $('body').append('<div class="selected-cells-count"></div>');
+                $('.selected-cells-count').css({'position' : 'fixed',
+                                                'top' : '0',
+                                                'width' : '100%',
+                                                'padding' : '5px 0',
+                                                'text-align' : 'center',
+                                                'background' : 'rgb(182, 119, 241)',
+                                                'color' : 'white'
+                });
+                $('.selected-cells-count').append(`
+                        <span><img src="images/details-mobile.png"></span>
+                        <span><img src="images/pencil-icon-mobile.png" alt="Редактировать"/></span>
+                        <span><img src="images/delete-mobile.png" alt="Удалить"/></span>`
+                );
+                
+            }
+            clickCount++;
+        } else if ($(this).css('background-color') == 'rgb(182, 119, 241)') {
+            $(this).css('background-color', 'rgba(0, 0, 0, 0)');
+            $(this.children).css('color', 'rgba(0, 0, 0, 0.6)');
+            clickCount--;
+            // for(let i = 0; i < $(this.parentNode.children).length; i++) {
+            //     if($(this.parentNode.children[i]).css('background-color') == 'rgb(182, 199, 241)') 
+            //     console.log(aa);
+            // }
+            // if($('.selected-cells-count').length != 0 && clickCount == 0) {
+            //     $('.selected-cells-count').remove();
+            //     $('table tbody tr td').css({'background-color' : 'rgb(255, 255, 255)',
+            //                                 // 'color' : 'rgba(0, 0, 0, 0.6)' 
+            //                                 });
+            // }
+
+
+
+            // debugger;
+            // if($('.selected-cells-count').length != 0 && $(this.parentNode).css('background-color') == 'rgb(182, 119, 241)') {
+            //     $('.selected-cells-count').remove();
+            //     $('table tbody tr td').css({'background-color' : 'rgb(255, 255, 255)',
+            //                                 'color' : 'rgba(0, 0, 0, 0.6)' 
+            //                                 });
+            // }
+        }
+    });
+
+        
+    // }
+
+    $(window).resize(function () {
+        if($(window).width() < 500) {
+            $('table thead th.source').text('Источ.');
+            $('table thead th.date-create').text('Дата');
+        }
+
+        if($(window).width() > 500) {
+            $('table thead th.source').text('Источник');
+            $('table thead th.date-create').text('Дата создания');
+        }
+
+        // if($('.selected-cells-count').length != 0) {
+        //     $('.selected-cells-count').remove();
+        //     $('table tbody tr td').css({'background-color' : 'rgb(255, 255, 255)',
+        //                                 'color' : 'rgba(0, 0, 0, 0.6)' 
+        //                                });
+        // }
+    });
+
+    // $('table tbody tr td:last-child .points').on('click', function () {
+    //     $('table tbody tr').css('position', 'relative');
+    //     $('table tbody tr td:last-child').css('display', 'none');
+
+    //     $(this.parentNode).css({'display' : 'flex',
+    //                                            'position' : 'absolute',
+    //                                            'right' : '10%', 
+    //                                            'padding' : '5px', 
+    //                                            'margin' : '10px 0 0 0', 
+    //                                            'width' : 'auto', 
+    //                                            'background' : 'rgba(255, 255, 255, 0.5)'
+//                               });
+    //     $('table tbody tr td:last-child span:not(:last)').css(
+    //         {'display' : 'block', 'padding' : '0px'});
+    //     $('table tbody tr td:last-child span:last').css('display', 'none',);
+    // });
+</script>
 </html>
