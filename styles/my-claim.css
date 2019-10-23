@@ -1,0 +1,107 @@
+
+
+/* Таблица */
+table {
+	width: 100%;
+}
+
+table thead th {
+	text-align: left;
+	color: rgba(0, 0, 0, 0.8);
+	padding: 10px 0;	
+}
+
+table tbody tr td {
+	align-items: center;
+	padding: 10px 0;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+table tbody tr td:last-child {
+	width: 75px;
+}
+
+table tbody tr td:last-child span {
+	cursor: pointer;
+	padding: 10px 1px;
+}
+/* Таблица */
+
+@media (min-width: 1000px) {
+	table tbody tr:hover {
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+	}
+
+	table tbody tr td:first-child,
+	table thead th:first-child  {
+		padding-left: 5px;
+	}
+}
+
+@media (max-width: 600px) {
+	.body-content {
+		margin: 10px auto;
+	}
+}
+
+/* Таблица для смартфона */
+@media (min-width: 800px) and (max-width: 1350px) {
+	.body-content {
+		width: 80%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.body-content {
+		width: 92%;
+	}
+
+	.menu span {
+		padding: 15px 10px;
+	}
+
+	table {
+		border-spacing: 0;
+	}
+
+	table tbody tr td:nth-child(3),
+	table tbody tr td:nth-child(6) {
+		padding: 10px 5px;
+	}
+
+	table tbody tr td:last-child {
+		display: none;
+	}
+
+	table tr td:first-child,
+	table tr td:nth-child(2) {
+		display: none;
+	}
+
+	table thead th:first-child,
+	table thead th:nth-child(2) {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	table tbody tr td:nth-child(4) {
+		color: rgb(182, 119, 241);
+		cursor: help;
+		position: relative;
+		text-decoration: underline;
+	}
+
+	table tbody tr td:nth-child(4):hover::after {
+		content: attr(aria-label);
+		position: absolute;
+		top: 70%;
+		left: 0;
+		z-index: 1;
+		background: rgba(255,255,230,0.9);
+		padding: 5px 10px;
+		border: 1px solid rgb(182, 119, 241);
+		color: rgba(0, 0, 0, 0.6);
+	}
+}
+/* Таблица для смартфона */

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Детали задания</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/task details.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script type="text/javascript" src="js/custom select.js" defer></script>
+</head>
+<body>
+    <div class="body-content">
+        <header>
+            <section class="logo">
+                <img src="images/logo.png" height="100px" width="100px">
+            </section>
+            <section class="user">
+                <img src="images/real_user.png" width="40px" height="40px" class="user-photo"/>
+                <p>Логист <span class="name">Ivan Ivanov</span></p>
+                <img src="images/logout.png" width="23px" height="23px">
+            </section>
+            <menu>
+                <li ><a href="my claims.html">Мои задания</a></li>
+                <li><a href="#">Все задания</a></li>
+                <li><a href="#">Аукцион</a></li>
+                <li><a href="#">По рейтингу</a></li>
+                <li><a href="#">В свободном доступе</a></li>
+                <li><a href="create-claim.html">Создать задание</a></li>
+                <li><a href="settings.html">Настройки</a></li>
+            </menu>
+        </header>
+        <h2 class="title">Детали задания</h2>
+        <div class="task-details">
+            <div class="task-details-delivery">   
+                <div class="info">
+                        <div class="number">
+                            <label class="block">Номер</label>
+                            <span>3</span>
+                        </div>
+                        <div class="date-create">
+                            <label class="block">Дата создания</label>
+                            <span class="date-create-span">22.08.19 08:53</span> 
+                        </div>
+                        <div class="planDates">
+                            <label class="block">Планируемая дата</label>
+                            <div>
+                                <span class="block date-from">22.08.19 08:53</span> <br>
+                                <span class="block date-to"> 23.08.19 08:53</span>
+                            </div>
+                        </div>
+                        <div class="TC">
+                            <label>Транспортное средство </label>
+                            <div>
+                                <span class="TC-characteristic">Вольво</span> 
+                                <span class="TC-characteristic">20т</span> 
+                                <span class="TC-characteristic">цвет красный</span>
+                            </div>
+                        </div>
+                </div> 
+                
+
+                <div class="route">
+                    <label>Маршрут</label>
+                    <ul>
+                        <li>г.Саратов, ул.Солнечная, 53</li>
+                        <li>г.Рязань, ул.Юбилейная, 20</li>
+                        <li>г.Москва, ул.Гагарина, 10</li>
+                        <li>г.Санкт-Петербург, ул.Гагарина, 41</li>
+                        <li>г.Самара, ул.Авроры , 05</li>
+                        <li>г.Самара, ул.Алексея Толстого , 15</li>
+                        <li>г.Самара, ул.Александра Невского , 08</li>
+                        <li>г.Рязань, ул. 10-я линия, 19</li>
+                        <li>г.Рязань, ул.улица Механизаторов, 10</li>
+                        <li>г.Рязань, проезд Гагарина, 04</li>
+                    </ul>
+                </div>
+                <div class="bidding">
+                    <label>Распределена: <span>на аукцион</span></label>
+                </div>
+            </div>
+            <div class="task-details-TC-hictory"> 
+                <div class="auction-history">
+                    <table>
+                        <caption>История аукциона</caption>
+                        <thead>
+                            <th>Перевозчик</th>
+                            <th>Ставка</th>
+                            <th>Время</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td aria-label="Перевозчик">МУП "Пермгорэлектротранс"</td>
+                                <td aria-label="Ставка">2000</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Техстрой-Авто"</td>
+                                <td aria-label="Ставка">1900</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Вираж"</td>
+                                <td aria-label="Ставка">1800</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Дизель"</td>
+                                <td aria-label="Ставка">1700</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Мега-Групп"</td>
+                                <td aria-label="Ставка">1600</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Урал-Авто"	</td>
+                                <td aria-label="Ставка">1500</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Морохина Л.В.</td>
+                                <td aria-label="Ставка">1400</td>
+                                <td aria-label="Время">22.08.19 08:46</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Камбур К.В.</td>
+                                <td aria-label="Ставка">1300</td>
+                                <td aria-label="Время">22.08.19 08:47</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Златковская Т.А.	</td>
+                                <td aria-label="Ставка">1200</td>
+                                <td aria-label="Время">22.08.19 08:48</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Колесников И.А.	</td>
+                                <td aria-label="Ставка">1100</td>
+                                <td aria-label="Время">22.08.19 08:48</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Аристов С.В.</td>
+                                <td aria-label="Ставка">1000</td>
+                                <td aria-label="Время">22.08.19 08:48</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "АСК Транс"</td>
+                                <td aria-label="Ставка">900</td>
+                                <td aria-label="Время">22.08.19 08:49</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "ГорАвтоТранс"</td>
+                                <td aria-label="Ставка">800</td>
+                                <td aria-label="Время">22.08.19 08:49</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Белозеров П.В.	</td>
+                                <td aria-label="Ставка">700</td>
+                                <td aria-label="Время">22.08.19 08:49</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Дизель"</td>
+                                <td aria-label="Ставка">600</td>
+                                <td aria-label="Время">22.08.19 08:49</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ООО "Закамское предприятие"</td>
+                                <td aria-label="Ставка">500</td>
+                                <td aria-label="Время">22.08.19 08:50</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Морохина Л.В.</td>
+                                <td aria-label="Ставка">400</td>
+                                <td aria-label="Время">22.08.19 08:50</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Камбур К.В.</td>
+                                <td aria-label="Ставка">300</td>
+                                <td aria-label="Время">22.08.19 08:50</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Златковская Т.А.	</td>
+                                <td aria-label="Ставка">200</td>
+                                <td aria-label="Время">22.08.19 08:51</td>
+                            </tr>
+                            <tr>
+                                <td aria-label="Перевозчик">ИП Колесников И.А.	</td>
+                                <td aria-label="Ставка">100</td>
+                                <td aria-label="Время">22.08.19 08:51</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

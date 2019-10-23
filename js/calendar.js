@@ -35,15 +35,13 @@
                 createCalendar($(this).prev(),inputYear,input[1]-1,input[0],HourMinute[0],HourMinute[1]);
             }
             let coords = $(this).position();
-            $($(this).prev()).css({ 'top': coords.top - 280 + "px", 'left': coords.left - 20 + 'px'});    //, 'left': '8%'
+            $($(this).prev()).css({ 'top': coords.top - 280 + "px", 'left': coords.left - 20 + 'px'});
         }
     });    
 
     function createCalendar(calendar, year, month, day, hour, minute) {
         let date = new Date(year, month);
         let table = getTable(year,month);
-        //let hours = today.getHours();
-        //let minutes = today.getMinutes();
         for (let i = 0; i < getDay(date); i++) table += '<td></td>';
 
         for (i = 0; date.getMonth() == month; i++) {
@@ -102,7 +100,6 @@
         if (!$(e).hasClass('selectedDay') && $(hiddenInput).val() == '') {
             $(e).addClass('selectedDay');
             $(hiddenInput).val(`${currentDay}.${monthInCaption}.${yearInCaption}`);
-            //console.log("на добавлении " +  $(hiddenInput).val());
         } 
     }
 

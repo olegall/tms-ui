@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Настройки</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/settings.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script type="text/javascript" src="js/custom select.js" defer></script>
+</head>
+<body>
+    <div class="body-content">
+        <header>
+            <section class="logo">
+                <img src="images/logo.png" height="100px" width="100px">
+            </section>
+            <section class="user">
+                <img src="images/real_user.png" width="40px" height="40px" class="user-photo"/>
+                <p>Логист <span class="name">Ivan Ivanov</span></p>
+                <img src="images/logout.png" width="23px" height="23px">
+            </section>
+            <menu>
+                <li ><a href="my claims.html">Мои задания</a></li>
+                <li><a href="#">Все задания</a></li>
+                <li><a href="#">Аукцион</a></li>
+                <li><a href="#">По рейтингу</a></li>
+                <li><a href="#">В свободном доступе</a></li>
+                <li><a href="create-claim.html">Создать задание</a></li>
+                <li class="active"><a href="settings.html">Настройки</a></li>
+            </menu>
+        </header>
+        <h2 class="title">Настройки</h2>
+        <form action="" class="form-settings">
+            <div>
+                <div class="periods">
+                    <h4>Период</h4>
+                    <div>
+                        <label>аукциона</label>
+                        <div>
+                            <div class="custom-select custom-select-day">
+                                <select>
+                                    <option value="0">0 дней</option>
+                                    <option value="0">0 дней</option>
+                                    <option value="0">1 день</option>
+                                    <option value="0">2 дня</option>
+                                    <option value="0">3 дня</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">8 часов</option>
+                                    <option value="0">8 часов</option>
+                                    <option value="0">10 часов</option>
+                                    <option value="0">20 часов</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>тендера</label>
+                        <div>
+                            <div class="custom-select custom-select-day">
+                                <select>
+                                    <option value="0">1 день</option>
+                                    <option value="0">0 дней</option>
+                                    <option value="0">1 день</option>
+                                    <option value="0">2 дня</option>
+                                    <option value="0">3 дня</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0"><span>10 часов</span></option>
+                                    <option value="0"><span>8 часов</span></option>
+                                    <option value="0"><span>10 часов</span></option>
+                                    <option value="0"><span>20 часов</span></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>по рейтингу</label>
+                        <div>
+                            <div class="custom-select custom-select-day">
+                                <select>
+                                    <option value="0">2 дня</option>
+                                    <option value="0">0 дней</option>
+                                    <option value="0">1 день</option>
+                                    <option value="0">2 дня</option>
+                                    <option value="0">3 дня</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0"><span>15 часов</span></option>
+                                    <option value="0"><span>8 часов</span></option>
+                                    <option value="0"><span>10 часов</span></option>
+                                    <option value="0"><span>15 часов</span></option>
+                                    <option value="0"><span>20 часов</span></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>в свободном доступе</label>
+                        <div>
+                            <div class="custom-select custom-select-day">
+                                <select>
+                                    <option value="">3 дня</option>
+                                    <option value="">0 дней</option>
+                                    <option value="">1 день</option>
+                                    <option value="">2 дня</option>
+                                    <option value="">3 дня</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="">20 часов</option>
+                                    <option value="">8 часов</option>
+                                    <option value="">10 часов</option>
+                                    <option value="">20 часов</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Шаг аукциона</h4>
+                        <input type="text" value="100">
+                    </div>
+                    <div class="save-button">
+                        <button type="button">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="auction">
+                    <h4>Аукцион</h4>
+                    <div>
+                        <label>выиграл</label>
+                        <input type="text" value="100">
+                    </div>
+                    <div>
+                        <label>сделал ставку</label>
+                        <input type="text" value="120">
+                    </div>
+                    <div>
+                        <label>проиграл</label>
+                        <input type="text" value="140">
+                    </div>
+                    <div>
+                        <label>отказался до окончания</label>
+                        <input type="text" value="160">
+                    </div>
+                    <div>
+                        <label>отказался, если победитель</label>
+                        <input type="text" value="200">
+                    </div>
+                </div>
+                <div class="tender">
+                    <h4>Тендер</h4>
+                    <div>
+                        <label>выиграл</label>
+                        <input type="text" value="100">
+                    </div>
+                    <div>
+                        <label>сделал ставку</label>
+                        <input type="text" value="120">
+                    </div>
+                    <div>
+                        <label>проиграл</label>
+                        <input type="text" value="140">
+                    </div>
+                    <div>
+                        <label>отказался до окончания</label>
+                        <input type="text" value="160">
+                    </div>
+                    <div>
+                        <label>отказался, если победитель</label>
+                        <input type="text" value="200">
+                    </div>
+                </div> 
+                <div class="rating">
+                    <h4>Рейтинг</h4>
+                    <div> 
+                        <label>не согласился (проигнорировал)</label>
+                        <input type="text" value="100">
+                    </div>
+                    <div>
+                        <label>отказался</label>
+                        <input type="text" value="150">
+                    </div>
+                    <div>
+                        <label>согласился и не отказался</label>
+                        <input type="text" value="170">
+                    </div>
+                    <div>
+                        <label>согласился, потом отказался</label>
+                        <input type="text" value="200">
+                    </div>
+                    <div class="save-button">
+                        <button type="button">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
