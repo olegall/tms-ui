@@ -16,7 +16,7 @@ input {
 	width: 100px;
 }
 
-select  {
+select {
 	height: 30px;
 }
 
@@ -276,7 +276,6 @@ button {
 		margin-left: 4px;
 	}
 
-
 	.deliveryDates .deliveryDatePlanFrom label {
 		margin-right: 5px;
 	}
@@ -300,18 +299,12 @@ button {
 
 	.building label::before {
 		content: url(../images/button-route-remove.png);
-	}
-	
-	.building label::after {
-		content: url(../images/button-route-add.png);
-	}
-
-	.building label::before {
 		right: 40px;
 	}
 	
 	.building label::after {
-		right: 0px;
+		content: url(../images/button-route-add.png);
+		right: 0px;		
 	}
 
 	.building label::before,
@@ -348,7 +341,6 @@ button {
 	width: 30px;
 	height: 30px;
 }
-
 
 .route-point .building input {
 	max-width: 40px;
@@ -418,7 +410,7 @@ button {
 	align-items: center;
 } 
 
-.bidding ul li  input[type=radio] {
+.bidding ul li input[type=radio] {
 	padding-left: 0;
 	-webkit-appearance: none;
     width: 20px;
@@ -456,7 +448,7 @@ button {
 .create-claim button {
 	padding: 10px 40px;
 }
-/* Кнопка Создать */
+
 
 /* Custom select */
 .custom-select {
@@ -466,11 +458,16 @@ button {
 	width: 239px;
 	height: 30px;
 }
-
 .custom-select select {
 	display: none; 
 }
 
+.select-selected {
+	border: 1px solid #a09aa1;
+	padding: 5px;
+	height: 18px;
+	border-radius: 5px;
+}
 .select-selected:after {
 	position: absolute;
 	content: "";
@@ -484,28 +481,12 @@ button {
 					transparent 
 					transparent;
 }
-
 .select-selected.select-arrow-active:after {
 	border-color: transparent 
 				  transparent 
 				  rgba(0, 0, 0, 0.5) 
 				  transparent;
 	top: 7px;
-}
-
-.select-items div,.select-selected {
-	color: rgba(0, 0, 0, 0.5);
-	cursor: pointer;
-	user-select: none;
-	padding: 5px;
-}
-
-
-.select-selected {
-	border: 1px solid #a09aa1;
-	padding: 5px;
-	height: 18px;
-	border-radius: 5px;
 }
 
 .select-items {
@@ -519,19 +500,22 @@ button {
 	z-index: 99;
 	box-shadow:  -1px 19px 17px -11px rgba(0, 0, 0, .5);
 }
-
+.select-items div,.select-selected {
+	color: rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	user-select: none;
+	padding: 5px;
+}
 .select-items div:last-child {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 	
 	border-radius: 0 0 5px 5px;
 }
-
-.select-hide {
-	display: none;
-}
-
 .select-items div:hover {
 	background-color: rgb(182, 119, 241);
 	color: white;
 }
-/* Custom select */
+
+.select-hide {
+	display: none;
+}
