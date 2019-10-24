@@ -87,7 +87,7 @@ div.periods > div > div {
 	}
 }
 
-@media (min-width: 1024px) and (max-width: 1500px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
 	.body-content {
 		width: 80%;
 	}
@@ -95,13 +95,6 @@ div.periods > div > div {
 	.form-settings {
 		grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
 	}
-}
-
-@media (max-width: 800px) {
-	.menu span {
-		padding: 15px 10px;
-	}
-	
 }
 
 @media (max-width: 600px) {

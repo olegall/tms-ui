@@ -30,13 +30,6 @@ button {
 	font-size: 16px;
 }
 
-.menu span {
-	cursor: pointer;
-	text-align: center;
-	padding: 15px;
-	color: rgb(185, 54, 218);
-}
-
 .claim {
 	padding-bottom: 2%;
 }
@@ -181,7 +174,7 @@ button {
 
 }
 
-@media(max-width:1500px) {
+@media(max-width:1200px) {
 	.body-content {
 		width: 92%;
 	}
