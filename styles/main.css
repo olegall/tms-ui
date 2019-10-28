@@ -73,7 +73,8 @@ menu li a {
     display: grid;
     justify-content: right;
     align-items: center;
-    grid-template-columns: 50px 150px 50px;
+	grid-template-columns: 50px 150px 50px;
+	cursor: pointer;
 }
 
 .user .name {

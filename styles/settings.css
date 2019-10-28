@@ -32,7 +32,7 @@ button {
 	width: 100%;
 }
 
-.form-settings {
+main {
 	display: grid;
 	grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
 	justify-content: center;
@@ -40,30 +40,30 @@ button {
 	color: rgba(0, 0, 0, 0.6);
 }
 
-.form-settings h4 {
+main h4 {
 	color: rgba(0, 0, 0, .7);
 }
 
-.form-settings > div {
+main > form {
 	width: 400px;
 }
 
-.form-settings > div .save-button {
+main > form .save-button {
 	display: block;
 }
 
-.form-settings > div > div > div.save-button {
+main > form > div > div.save-button {
 	display: block;
 }
 
-.form-settings > div > div > div {
+main > form > div > div {
 	display: grid;
 	grid-template-columns: 1fr 60px;
 	align-items: center;
 	margin: 10px 0;
 }
 
-.form-settings div.periods > div {
+div.periods > div {
 	grid-template-columns: 1fr 186px;
 }
 
@@ -82,7 +82,7 @@ div.periods > div > div {
 }
 
 @media (max-width: 1400px) {
-	.form-settings {
+	main {
 		grid-template-columns: 1fr;
 	}
 }
@@ -92,17 +92,17 @@ div.periods > div > div {
 		width: 80%;
 	}
 
-	.form-settings {
+	main {
 		grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
 	}
 }
 
 @media (max-width: 600px) {
-	.form-settings > div {
+	main > form {
 		width: 90%;
 	}
 
-	.form-settings > div > div > div {
+	main > form > div > div {
 		grid-template-columns: 1fr 41px;
 	}
 }
