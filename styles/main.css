@@ -6,10 +6,10 @@ body {
 }
 
 .body-content {
-	margin: 30px auto;
+	margin: 20px auto;
 	padding: 2% 3%;
 	background: white;
-	width: 63%;
+	width: 70%;
 	font-size: 16px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -73,7 +73,8 @@ menu li a {
     display: grid;
     justify-content: right;
     align-items: center;
-    grid-template-columns: 50px 150px 50px;
+	grid-template-columns: 50px 150px 50px;
+	cursor: pointer;
 }
 
 .user .name {
