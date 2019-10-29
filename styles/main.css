@@ -140,7 +140,6 @@ menu li a {
 .custom-select {
 	font-size: 14px;
 	position: relative;
-	font-family: Arial;
 	width: 90px;
 	height: 30px;
 }
@@ -202,4 +201,23 @@ menu li a {
 
 .select-hide {
 	display: none;
+}
+
+.base-input,
+.base-select {
+	outline: none;
+	padding-left: 5px;
+	color: rgba(0, 0, 0, 0.5);
+	border: 1px solid #a09aa1;
+	border-radius: 5px;
+}
+
+.base-button {
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	background: rgb(182, 119, 241);
+	color: white;
+	font-size: 16px;
 }

@@ -9,33 +9,40 @@ main {
 	width: 100%;
 }
 
-table {
+.base-table {
 	border-spacing: 0;
 }
-table caption,
-table thead  th {
+.base-table caption,
+.base-table thead  th {
 	color: rgba(0, 0, 0, .7);
 }
-table caption {
+.base-table caption {
 	font-size: 21px;
 	font-weight: 500;
 	margin-bottom: 2%;
 }
-table thead th {
+.base-table thead th {
 	text-align: left;
 	font-weight: 400;
 	font-size: 18px;
 	padding: 0px;
 }
-table thead th:not(:last-child) {
+.base-table thead th:not(:last-child) {
 	padding-right: 10px;
 }
-table tbody tr td {
+.base-table tbody tr td {
 	vertical-align: baseline;
 	padding: 20px 0;
 }
-table tbody tr:nth-child(odd) {
+.base-table tbody tr:nth-child(odd) {
 	background: rgba(185, 54, 218, .05);
+}
+
+.base-table tbody tr td:first-child {
+	padding-left: 5px;
+}
+.base-table tbody tr td:last-child {
+	padding-right: 5px;
 }
 
 .route ul li {
@@ -91,7 +98,7 @@ table tbody tr:nth-child(odd) {
 		justify-items: center;
 	}
 
-	table tbody tr td {
+	.base-table tbody tr td {
 		padding: 10px 0;
 	}
 }
