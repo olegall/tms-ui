@@ -1,0 +1,1051 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page – приложение ASP.NET</title>
+        <link href="bootstrap.css" rel="stylesheet"><!--/TMSMVC/Content/bootstrap.css-->
+    <link href="site.css" rel="stylesheet"> <!--/TMSMVC/Content/site.css-->
+    
+        <!-- <script src="/TMSMVC/Scripts/modernizr-2.8.3.js"></script> -->
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/TMSMVC/">TMS</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/TMSMVC/Registration">Заявка на регистрацию</a></li>
+                        <li><a href="/TMSMVC/Authorization">Войти</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            
+    
+    <div class="logged-in-user">
+        <h1>Новое задание</h1>
+        <h5 class="logged-in">
+            Логист <b>
+                Ivan
+                Ivanov
+            </b>
+        </h5>
+        <a href="../Authorization">Выйти</a>
+    </div>
+    <form id="assign-claim">
+        <input type="radio" name="assign" value="shipper" checked="">Назначить на перевозчика<br>
+        <input type="radio" name="assign" value="trading">Распределить на торги/по рейтингу/с свободный доступ
+    </form>
+    <form action="SaveCreated" class="claim">
+        <div class="row">
+            <div class="col-lg-6">
+                <input id="logistian-id" type="hidden" name="logistianId" value="28">
+    
+                <label class="lbl">Номер</label>
+                <input type="text" name="number" id="number" class="form-control">
+    
+                <label class="lbl">дата заполнения</label>
+                <input type="text" name="date" class="form-control">
+    
+                <label class="date-lbl lbl">Планируемая дата доставки С</label>
+                <input type="text" name="planDateFrom" class="calendar form-control" value="30.10.2019 16:02:36">
+                <input type="hidden" class="planDateFromHidden" value="30.10.2019 16:02:36">
+    
+                <label class="lbl">Планируемая дата доставки По</label>
+                <input type="text" name="planDateTo" class="calendar form-control" value="31.10.2019 16:02:36">
+                <input type="hidden" class="planDateToHidden" value="31.10.2019 16:02:36">
+    
+                <div class="route">
+                    <label class="lbl route-lbl">Маршрут</label>
+                    <input type="button" name="deliveryDateTo" class="add-route-point btn btn-xs btn-default" value="+">
+                </div>
+    
+                <label class="lbl shipping-place-lbl">Место погрузки</label>
+                <input type="text" name="shippingPlace" class="form-control">
+    
+                <label class="lbl">Место доставки</label>
+                <input type="text" name="deliveryPlace" class="form-control">
+            </div>
+            <div class="right-column col-lg-6">
+                <label class="lbl">Организация</label>
+                <select class="form-control" name="organizationId" id="organizationId">
+                        <option value="21">Организация 3</option>
+                        <option value="22">Организация 4</option>
+                        <option value="23">foo</option>
+                        <option value="24">Организация 3</option>
+                        <option value="25">Организация 4</option>
+                        <option value="26">ТН-Строительные системы</option>
+                        <option value="27">ТН-xxx</option>
+                        <option value="28">ТН-Строительные системы</option>
+                        <option value="29">ТН-xxx</option>
+                        <option value="30">ТН-Строительные системы</option>
+                        <option value="31">ТН-xxx</option>
+                        <option value="32">ТН-Строительные системы</option>
+                        <option value="33">ТН-xxx</option>
+                        <option value="34">ТН-Строительные системы</option>
+                        <option value="35">ТН-xxx</option>
+                        <option value="36">ТН-Строительные системы</option>
+                        <option value="37">ТН-xxx</option>
+                        <option value="38">ТН-Строительные системы</option>
+                        <option value="39">ТН-xxx</option>
+                        <option value="40">ТН-Строительные системы</option>
+                        <option value="41">ТН-xxx</option>
+                        <option value="42">ТН-Строительные системы</option>
+                        <option value="43">ТН-xxx</option>
+                        <option value="44">ТН-Строительные системы</option>
+                        <option value="45">ТН-xxx</option>
+                        <option value="46">ТН-Строительные системы</option>
+                        <option value="47">ТН-xxx</option>
+                        <option value="48">ТН-Строительные системы</option>
+                        <option value="49">ТН-xxx</option>
+                        <option value="50">ТН-Строительные системы</option>
+                        <option value="51">ТН-xxx</option>
+                        <option value="52">ТН-Строительные системы</option>
+                        <option value="53">ТН-xxx</option>
+                        <option value="54">ТН-Строительные системы</option>
+                        <option value="55">ТН-xxx</option>
+                        <option value="56">ТН-Строительные системы</option>
+                        <option value="57">ТН-xxx</option>
+                        <option value="58">ТН-Строительные системы</option>
+                        <option value="59">ТН-xxx</option>
+                        <option value="60">ТН-Строительные системы</option>
+                        <option value="61">ТН-xxx</option>
+                        <option value="62">ТН-Строительные системы</option>
+                        <option value="63">ТН-xxx</option>
+                        <option value="64">ТН-Строительные системы</option>
+                        <option value="65">ТН-xxx</option>
+                        <option value="66">ТН-Строительные системы</option>
+                        <option value="67">ТН-xxx</option>
+                        <option value="68">ТН-Строительные системы</option>
+                        <option value="69">ТН-xxx</option>
+                        <option value="70"></option>
+                        <option value="71"></option>
+                        <option value="72"></option>
+                        <option value="73"></option>
+                        <option value="74"></option>
+                        <option value="75"></option>
+                        <option value="76"></option>
+                        <option value="77"></option>
+                        <option value="78"></option>
+                        <option value="79"></option>
+                        <option value="80"></option>
+                        <option value="81"></option>
+                        <option value="82"></option>
+                        <option value="83"></option>
+                        <option value="84"></option>
+                        <option value="85">ТН-Строительные системы</option>
+                        <option value="86">ТН-xxx</option>
+                        <option value="87">ТН-Строительные системы</option>
+                        <option value="88">ТН-xxx</option>
+                        <option value="89">ТН-Строительные системы</option>
+                        <option value="90">ТН-xxx</option>
+                        <option value="91">ТН-Строительные системы</option>
+                        <option value="92">ТН-xxx</option>
+                        <option value="93">ТН-Строительные системы</option>
+                        <option value="94">ТН-xxx</option>
+                        <option value="95">ТН-Строительные системы</option>
+                        <option value="96">ТН-xxx</option>
+                        <option value="97">ТН-Строительные системы</option>
+                        <option value="98">ТН-xxx</option>
+                        <option value="99">ТН-Строительные системы</option>
+                        <option value="100">ТН-xxx</option>
+                        <option value="101">ТН-Строительные системы</option>
+                        <option value="102">ТН-xxx</option>
+                        <option value="103">ТН-Строительные системы</option>
+                        <option value="104">ТН-xxx</option>
+                        <option value="105">ТН-Строительные системы</option>
+                        <option value="106">ТН-xxx</option>
+                        <option value="107">ТН-Строительные системы</option>
+                        <option value="108">ТН-xxx</option>
+                        <option value="109">ТН-Строительные системы</option>
+                        <option value="110">ТН-xxx</option>
+                        <option value="111">ТН-Строительные системы</option>
+                        <option value="112">ТН-xxx</option>
+                        <option value="113">ТН-Строительные системы</option>
+                        <option value="114">ТН-xxx</option>
+                        <option value="115">ТН-Строительные системы</option>
+                        <option value="116">ТН-xxx</option>
+                        <option value="117">ТН-Строительные системы</option>
+                        <option value="118">ТН-Строительные системы</option>
+                        <option value="119">ТН-xxx</option>
+                        <option value="120">ТН-Строительные системы</option>
+                        <option value="121">ТН-xxx</option>
+                        <option value="122">ТН-Строительные системы</option>
+                        <option value="123">ТН-xxx</option>
+                        <option value="124">ТН-Строительные системы</option>
+                        <option value="125">ТН-xxx</option>
+                        <option value="126">ТН-Строительные системы</option>
+                        <option value="127">ТН-xxx</option>
+                        <option value="128">ТН-Строительные системы</option>
+                        <option value="129">ТН-xxx</option>
+                        <option value="130">ТН-Строительные системы</option>
+                        <option value="131">ТН-xxx</option>
+                        <option value="132">ТН-Строительные системы</option>
+                        <option value="133">ТН-xxx</option>
+                        <option value="134">ТН-Строительные системы</option>
+                        <option value="135">ТН-xxx</option>
+                        <option value="136">ТН-Строительные системы</option>
+                        <option value="137">ТН-xxx</option>
+                        <option value="138">ТН-Строительные системы</option>
+                        <option value="139">ТН-xxx</option>
+                        <option value="140">ТН-Строительные системы</option>
+                        <option value="141">ТН-xxx</option>
+                        <option value="142">ТН-Строительные системы</option>
+                        <option value="143">ТН-xxx</option>
+                        <option value="144">ТН-Строительные системы</option>
+                        <option value="145">ТН-xxx</option>
+                        <option value="146">ТН-Строительные системы</option>
+                        <option value="147">ТН-xxx</option>
+                        <option value="148">ТН-Строительные системы</option>
+                        <option value="149">ТН-xxx</option>
+                        <option value="150">ТН-Строительные системы</option>
+                        <option value="151">ТН-xxx</option>
+                </select>
+    
+                <label class="lbl">Тип ТС</label>
+                <select class="form-control" name="vehicleTypeId" id="vehicleTypeId">
+                        <option value="190">легковой</option>
+                        <option value="191">10 т тент 82м3</option>
+                        <option value="192">20 т тент 82м3</option>
+                </select>
+    
+                <label class="lbl">Тип загрузки</label>
+                <select class="form-control" name="loadingTypeId" id="loadingTypeId">
+                        <option value="102">Передняя</option>
+                        <option value="103">Задняя</option>
+                </select>
+    
+                <label class="lbl">Тип кузова ТС</label>
+                <select class="form-control" name="bodyTypeId" id="bodyTypeId">
+                        <option value="102">Седан</option>
+                        <option value="103">Универсал</option>
+                </select>
+    
+                <label class="lbl">Вес</label>
+                <input type="text" name="deliveryDate" class="form-control">
+                <br>
+    
+                <a href="#" class="match-shippers">Подобрать перевозчиков</a>
+                <label class="lbl assign-lbl">Назначить:</label>
+                <select id="" class="shippers-select form-control" name="shipperId"></select>
+    
+                <input type="button" class="assign-auto btn btn-default btn-xs" value="Распределить автоматически">
+                <span class="site-suggestion" style="display: none;">Аукцион</span><br>
+    
+                <select class="trading-select form-control" name="statusId" style="display: none;">
+                    <option value="0">Выберите:</option>
+                    <option value="1">На аукцион</option>
+                    <option value="2">На тендер</option>
+                    <option value="3">По рейтингу</option>
+                    <option value="4">В свободный доступ</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Создать">
+    </form>
+    
+    
+    <h2 class="title">Создать задание</h2>
+    
+    <form action="SaveCreated" class="claim">
+        <input id="logistian-id" type="hidden" name="logistianId" value="28">
+        <div class="claim-header">
+            <div class="date-of-delivery">
+                <div class="number">
+                    <label class="block base-label">Номер</label>
+                    <input type="text" name="number" title="Номер" value="195714" class="base-input number-claim">
+                </div>
+                <div class="deliveryDates">
+                    <label class="block deliveryDate-title base-label">Планируемая дата доставки</label>
+                    <div class="inline-block deliveryDatePlanFrom">
+                        <label class="base-label">с</label>
+                        <input type="text" name="planDateFrom" class="base-input calendar" value="30.10.2019 12:00:00">
+                    </div>
+                    <div class="inline-block deliveryDatePlanTo">
+                        <label class="base-label">по</label>
+                        <input type="text" name="planDateTo" class="base-input calendar" value="31.10.2019 12:00:00">
+                    </div>
+                </div>
+                <div class="WV-TC">
+                    <div class="weight">
+                        <label class="base-label">Вес, кг</label>
+                        <div>
+                            <input type="text" class="base-input" title="Вес" value="50">
+                        </div>
+                    </div>
+                    <div class="volume">
+                        <label class="base-label">Обьем, м<sup>3</sup></label>
+                        <div>
+                            <input type="text" class="base-input" title="Обьем" value="100">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="body-type">
+                    <label class="base-label">Тип ТС</label>
+                    <div class="custom-select">
+                        <select name="vehicleTypeId">
+                            <option value="190">10т</option>
+                            <option value="111">20т</option>
+                            <option value="120">30т</option>
+                        </select>
+                    <div class="select-selected">10т</div><div class="select-items select-hide"><div>20т</div><div>30т</div></div></div>  
+                </div> -->
+                <div class="body-type">
+                    <label class="base-label">Тип ТС</label>
+                    <div class="custom-select">
+                        <select name="vehicleTypeId">
+                            <option value="190" selected disabled>10т</option>
+                            <!--Здесь дублирование важно! Первый элемент это невыбираемое, дефолтное значение
+                                Если убрать, то работать select будет неправильно -->
+                            <option value="111">10т</option>
+                            <option value="120">30т</option>
+                            <option value="120">30т</option>
+                        </select>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="route-add">
+            <label class="route-title base-label">Маршрут</label>
+        </div>
+        <div class="route-point-wrapper">
+            <div class="route-point">
+                <div class="button-route button-route-add add-point">
+                    <button type="button" class="base-button" title="Добавить точку маршрута">+</button>
+                </div>
+                <input type="text" name="address" class="base-input addr">
+                <div class="button-route remove-route-point">
+                    <button type="button" class="base-button" title="Удалить точку маршрута">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="bidding-title">
+            <span>Поместить</span>
+        </div>
+        <div class="bidding">
+            <ul>
+                <li> 
+                    <input type="radio" name="statusId" value="1" checked=""> <span>аукцион</span>
+                </li>
+                <li>
+                    <input type="radio" name="statusId" value="2"> <span>тендер</span>
+                </li>
+                <li>
+                    <input type="radio" name="statusId" value="3"> <span>по рейтингу</span>
+                </li>
+                <li>
+                <input type="radio" name="statusId" value="4"> <span>в своб.доступе </span>
+                </li>
+            </ul>
+        </div>
+        <div class="create-claim">
+            <button class="base-button" type="submit">Создать</button>
+        </div>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
+    <script>
+        $('.route-point-wrapper').on('click', '.add-point', function(){
+            $('.route-point-wrapper').append(getRoutePoint());
+        });
+    
+        $('.route-point-wrapper').on('click', '.remove-point', function(){
+            $(this).parent().remove();
+            $(this).remove();
+        });
+    
+        function getRoutePoint() {
+            return `<div class="route-point">
+                        <div class="button-route button-route-add add-point">
+                            <button type="button" title="Добавить точку маршрута">+</button>
+                        </div>
+                        <input type="text" name="address">
+                        <div class="button-route remove-point">
+                            <button type="button"  title="Удалить точку маршрута">-</button>
+                        </div>
+                    </div>`;
+        }
+    </script>
+    
+    
+    <script>
+        // отладка
+        $('input[name="number"]').val(1);
+        //let d = new Date();
+        //let date = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear() + ':' + d.getHours() + '.' + d.getMinutes();
+    
+        //$("#datepicker1, #datepicker2").datepicker();
+    
+        /*
+        $('.add-route-point').click(function () {
+            $('.shipping-place-lbl').prepend(getPointMarkup());
+    
+            $('.remove-point').click(function () {
+                $(this).prev().remove();
+                $(this).next().remove(); // br
+                $(this).remove();
+            });
+        });
+    
+        function getPointMarkup() {
+            return '<input type="text" name="points" class="point form-control">' +
+                '<input type="button" class="remove-point btn btn-danger btn-sm" value="x"><br>';
+        }*/
+    
+        $('.match-shippers').click(function () {
+            let host = window.location.hostname;
+            let port = window.location.port;
+            let path = "http://" + host + ':' + port + "/TMSMVC/User/GetShippers";
+            $.ajax({
+                url: path,
+                success: function (result) {
+                    $('.shippers-select').append('<option value=0>Выберите:</option>');
+                    result.forEach(function (item) {
+                        $('.shippers-select').append('<option value=' + item.Id + '>' + item.Title + '</option>');
+                    });
+                }
+            })
+        });
+    
+        toggleTradingUI('none');
+        $('#assign-claim input').on('change', function () {
+            $(".trading-select").val($(".trading-select option:first").val());
+            $(".shippers-select").val($(".shippers-select option:first").val());
+            let val = $('input[name=assign]:checked', '#assign-claim').val();
+            if (val == 'shipper') {
+                toggleShipperUI('block');
+                toggleTradingUI('none');
+            }
+            if (val == 'trading') {
+                toggleShipperUI('none');
+                toggleTradingUI('block');
+            }
+        });
+    
+        function toggleShipperUI(displayVal) {
+            $('.match-shippers, .assign-lbl, .shippers-select').css('display', displayVal);
+        }
+    
+        function toggleTradingUI(displayVal) {
+            $('.trading-lbl, .find-auto, .site-suggestion, .trading-select').css('display', displayVal);
+        }
+    
+        function getAuctionStartPriceHtml() {
+            return '<label class="trading-price lbl">Начальная цена</label>' +
+                '<input class="trading-price auction-price form-control" type="text" name="auctionStartPrice">';
+        }
+    
+        function getTenderStartPriceHtml() {
+            return '<label class="trading-price lbl">Начальная цена</label>' +
+                '<input class="trading-price tender-price form-control" type="text" name="tenderStartPrice">';
+        }
+    
+        $('.trading-select').change(function () {
+            var value = $('.trading-select option:selected').val();
+            $('.trading-price').remove();
+            switch (value) {
+                case "1": $(this).after(getAuctionStartPriceHtml()); break;
+                case "2": $(this).after(getTenderStartPriceHtml()); break;
+            }
+        });
+    </script>
+    <script type="text/javascript" defer="">
+        const daysInWeek = 7;
+        const days = {
+            mon: 0,
+            sun: 6
+        };
+        const monthsNumber = {
+            jan: 0,
+            oct: 9,
+            nov: 10,
+            dec: 11
+        };
+        const today = new Date();
+        let currentYear = today.getFullYear();
+        let currentMonth = today.getMonth();
+        let hours = today.getHours();
+        let minutes = today.getMinutes();
+        let months = ['Январь', 'Февраль', 'Март', 'Апрель',
+                    'Май', 'Июнь', 'Июль', 'Август',
+                    'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+    
+        $('.calendar').on('click',function () {
+            if($(this).prev().length == 0) 
+                $('<p class="for"style="display:none;"></p>').insertBefore(this);
+            if($(this).prev() != undefined && $(this).prev()[0].className != "calendar-wrapper") {
+                $('<input type="text" class="hidden-input" hidden value=""/>').insertBefore(this);
+                $('<div class="calendar-wrapper"></div>').insertBefore(this);
+                let dateInInput = $(this).val().split('.');
+                if(dateInInput[0] == '') {
+                    createCalendar($(this).prev(), year, currentMonth, '', hours, minutes);
+                } else if(dateInInput[0] != ''){
+                    let input = $(this).val().split('.');
+                    let inputYearAndTime = input[2].split(' ');
+                    let inputYear = inputYearAndTime[0];
+                    let HourMinute = inputYearAndTime[1].split(':');
+                    createCalendar($(this).prev(),inputYear,input[1]-1,input[0],HourMinute[0],HourMinute[1]);
+                }
+                let coords = $(this).position();
+                $($(this).prev()).css({ 'top': coords.top - 280 + "px", 'left': coords.left - 20 + 'px'});
+            }
+        });    
+    
+        function createCalendar(calendar, year, month, day, hour, minute) {
+            let date = new Date(year, month);
+            let table = getTable(year,month);
+            for (let i = 0; i < getDay(date); i++) table += '<td></td>';
+    
+            for (i = 0; date.getMonth() == month; i++) {
+                if(date.getDate() != day) {
+                    table += '<td onclick="chooseDay(this)">' + date.getDate() + '</td>';
+                } else if(date.getDate() == day) {
+                    table += '<td onclick="chooseDay(this)" class="selectedDay">' + date.getDate() + '</td>';
+                    let copyMonth = month + 1;
+                    copyMonth = (copyMonth < 10) ? '0' + copyMonth : copyMonth;
+                    $(calendar).prev().val(`${day}.${copyMonth}.${year}`);
+                }
+                if (getDay(date) % daysInWeek == days.sun) // вс, последний день - перевод строки
+                    table += '</tr><tr>';
+                date.setDate(date.getDate() + 1);
+            }
+            if (getDay(date) != days.mon) {
+                for (let i = getDay(date); i < daysInWeek; i++) {
+                    table += createCell();
+                }
+            }
+            table += closeTable();
+            $(calendar).html(table);
+            $(calendar).append(fieldHours(hour));
+            $(calendar).append(fieldMinutes(minute));
+            $(calendar).append(SaveTime());
+        }
+    
+        function chooseDay(e) {
+            let yearInCaption = e.parentNode.parentNode.parentNode.parentNode.children[0].caption.innerText.split(/\n/)[1].split(' ')[1];// год из caption table
+            let monthInCaption = e.parentNode.parentNode.parentNode.parentNode.children[0].caption.innerText.split(/\n/)[1].split(' ')[0];// месяц из caption table
+            let currentDay = e.innerText;
+            let hiddenInput = $(e.parentNode.parentNode.parentNode.parentNode).prev();
+            let table = [];
+            for (let i = 1; i < e.parentNode.parentNode.children.length; i++) {
+                table.push(e.parentNode.parentNode.children[i]);
+            }
+    
+            for (let i = 0; i < table.length; i++) {
+                for (let j = 0; j < table[i].children.length; j++) {
+                    if (table[i].children[j].className == 'selectedDay') {
+                        $(table[i].children[j]).removeClass('selectedDay');
+                        $(hiddenInput).val('');
+                    }
+                }
+            }
+    
+    
+            for(let i = 0; i < months.length; i++) {
+                if(months[i] == monthInCaption) {
+                    monthInCaption = i + 1;
+                }
+            }
+                
+            currentDay = (currentDay < 10) ? '0' + currentDay : currentDay;
+            monthInCaption = (monthInCaption < 10) ? '0' + monthInCaption : monthInCaption;
+            if (!$(e).hasClass('selectedDay') && $(hiddenInput).val() == '') {
+                $(e).addClass('selectedDay');
+                $(hiddenInput).val(`${currentDay}.${monthInCaption}.${yearInCaption}`);
+            } 
+        }
+    
+        function saveDate(e) {
+            let hour = e.parentNode.children[2].value;
+            let minute = e.parentNode.children[4].value;
+            if (!(hour.match(/0[0-9]/)))
+                hour = (hour < 10) ? '0' + hour : hour;
+            if (!(minute.match(/0[0-9]/)))
+                minute = (minute < 10) ? '0' + minute : minute;
+            let currentValueInput = $(e.parentNode).next();
+            let hiddenInput = $(e.parentNode).prev().val();
+            if(hiddenInput != '')
+                $(currentValueInput).val(`${hiddenInput} ${hour}:${minute}:00`);
+            $(e.parentNode).remove();
+        }
+    
+        function nextMonth(e) {
+            $(e.parentNode.parentNode.parentNode).prev().val('');
+            let calendarWrapper = e.parentNode.parentNode.parentNode;
+            let hour = ($(calendarWrapper).next()[0].value != '')? $(calendarWrapper).next()[0].value.split(' ')[1].split(':')[0] : today.getHours();
+            let minute = ($(calendarWrapper).next()[0].value != '')? $(calendarWrapper).next()[0].value.split(' ')[1].split(':')[1] : today.getMinutes();
+                $(calendarWrapper).empty();
+                if (currentMonth >= 0 && currentMonth <= 11) {
+                    currentMonth++;
+                    if (currentMonth != 12) 
+                        createCalendar(calendarWrapper, currentYear, currentMonth,'',hour,minute);
+                }
+                if (currentMonth == -1 || currentMonth == 0) {
+                    currentMonth = 11;
+                    createCalendar(calendarWrapper, currentYear, currentMonth,'',hour,minute);
+                }
+                if (currentMonth == 12) {
+                    currentMonth = 0;
+                    currentYear++;
+                    createCalendar(calendarWrapper, currentYear, currentMonth,'',hour,minute);
+                }
+            }
+    
+        function previousMonth(e) {
+            $(e.parentNode.parentNode.parentNode).prev().val('');
+            let calendarWrapper = e.parentNode.parentNode.parentNode;
+            let hour = ($(calendarWrapper).next()[0].value != '')? $(calendarWrapper).next()[0].value.split(' ')[1].split(':')[0] : today.getHours();
+            let minute = ($(calendarWrapper).next()[0].value != '')? $(calendarWrapper).next()[0].value.split(' ')[1].split(':')[1] : today.getMinutes();
+            $(calendarWrapper).empty();
+            if (currentMonth >= 0 && currentMonth <= 11) {
+                currentMonth--;
+                if (currentMonth != -1)
+                    createCalendar(calendarWrapper, currentYear, currentMonth, '', hour, minute);
+            }
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+                createCalendar(calendarWrapper, currentYear, currentMonth, '', hour, minute);
+            }
+        }
+    
+        function getTable(year,month) {
+            return '<table>' +
+                        '<caption>' +
+                            '<span class="previousMonth" onclick=previousMonth(this)> < </span>' +
+                            '<span class="calendar-wrapper-date">' + months[month] + ' ' + year + '</span>' +
+                            '<span class="nextMonth" onclick=nextMonth(this)>></span>' +
+                        '</caption>' +
+                        '<tr>' +
+                            '<th>пн</th>' +
+                            '<th>вт</th>' +
+                            '<th>ср</th>' +
+                            '<th>чт</th>' +
+                            '<th>пт</th>' +
+                            '<th>сб</th>' +
+                            '<th>вс</th>' +
+                        '</tr>' +
+                        '<tr>';
+        }
+    
+        function getDay(date) {
+            let day = date.getDay();
+            if (day == 0) day = 7;
+            return day - 1;
+        }
+    
+        let closeTable = () => '</tr></table>';
+    
+        let createCell = () => '<td></td>';
+    
+        let fieldHours = (hour) =>  `<span>Час</span><input type = "number" min="0" max="23" class = "time hours" placeholder = "Час" value = ${hour} />`;
+        let fieldMinutes = (minute) =>  `<span>Мин</span><input type = "number" min="0" max="60" class = "time minutes" placeholder = "Мин" value = ${minute} />`;
+        let SaveTime = () => '<button class="ok" onclick=saveDate(this)>OK</button>'; 
+    </script>
+    
+    <style>
+    .base-input,
+    .base-select {
+        width: 200px;
+    }
+    
+    .base-input {
+        height: 30px;
+    }
+    
+    .calendar {
+        width: 100px;
+    }
+    
+    .base-select {
+        height: 30px;
+    }
+    
+    .claim {
+        padding-bottom: 2%;
+    }
+    
+    .deliveryDate-title {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .number-claim {
+        max-width: 90px;
+    }
+    
+    .block {
+        display: block;
+    }
+    
+    .date-of-delivery {
+        display: grid;
+        justify-content: center;
+        justify-items: end;
+        width: 100%;
+        margin: 25px 0;
+        grid-template-columns: 102px 315px 140px 241px;
+        grid-gap: 5px;
+    }
+    
+    .date-of-delivery .volume {
+        margin: 0px 0 0 5px;
+    }
+    
+    .volume input,
+    .weight input {
+        width: 45px;
+    }
+    
+    .deliveryDatePlanFrom input,
+    .deliveryDatePlanTo input,
+    .number input,
+    .WV-TC input {
+        margin-top: 4px;
+    }
+    
+    .date-of-delivery .deliveryDatePlanTo label {
+        margin: 0 5px 0 0;
+    }
+    
+    .date-of-delivery .deliveryDates {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .date-of-delivery .WV-TC {
+        display: flex;
+        justify-content: center;
+        width: 140px;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .route-point {
+        display: grid;
+        grid-gap: 15px;
+        width: 100%;
+        margin: 2% 0 2% 0;
+        flex-wrap: wrap;
+    }
+    
+    .button-route {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .button-route:last-child {
+        justify-content: flex-end;
+    }
+    
+    .route-add {
+        margin: 1.5% 0;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(182, 119, 241);
+    }
+    
+    .route-point div div{
+        margin-top: 5px;
+    }
+    
+    .body-type .select-selected {
+        margin-top: 4px;
+    }
+    
+    @media(min-width: 1050px) {
+        .bidding ul {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 93px 82px 120px 141px;
+            grid-gap: 10px;
+            justify-items: center;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+    
+        .bidding ul li {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+        }
+    }
+    
+    @media(max-width: 1100px) {
+        .body-content {
+            width: 87%;
+        }
+    
+        .date-of-delivery {
+            justify-items: center;
+        }
+    
+        .route-point div div{
+            margin-top: 0;
+        }
+    
+    }
+    
+    @media(max-width:1200px) {
+        .body-content {
+            width: 98%;
+        }
+    }
+    
+    @media (max-width: 1100px) {
+        .route-point {
+            grid-gap: 10px;
+        }
+    
+        .date-of-delivery {
+            grid-template-columns: 1fr 315px 1fr 1fr;
+            padding-left: 0;
+            justify-items: baseline;
+        } 
+    }
+    @media (max-width: 1050px) {	
+        .route-point .custom-select {
+            width: 100%;
+        }
+    
+        .date-of-delivery {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+    
+        .date-of-delivery .WV-TC {
+            width: auto;
+            justify-content: end;
+        }
+    
+        .date-of-delivery .deliveryDates {
+            width: auto;
+        }
+    
+        .deliveryDate-title {
+            text-align: left;
+        }
+    
+        .date-of-delivery .deliveryDatePlanTo label {
+            margin-left: 5px;
+        }
+    
+        .number label.block {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    
+        .body-type {
+            display: grid;
+            grid-template-columns: 61px 1fr;
+            align-items: center;
+        }
+    
+        .WV-TC .weight,
+        .WV-TC .volume {
+            display: grid;
+            align-items: center;
+        }
+    
+        .WV-TC .volume {
+            grid-template-columns: 85px 0.5fr;
+        }
+    
+        .WV-TC .weight {
+            grid-template-columns: 60px 0.5fr;
+        }
+    
+        .WV-TC .weight label,
+        .WV-TC .volume label {
+            margin-right: 5px;
+        }
+    
+        .WV-TC .volume label {
+            margin-left: 4px;
+        }
+    
+        .deliveryDates .deliveryDatePlanFrom label {
+            margin-right: 5px;
+        }
+    
+        .bidding ul  {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+            padding-left: 0;
+        }
+    
+        .bidding ul li {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+             
+        }
+        
+        .body-type .select-selected {
+            margin-top: 0px;
+        }
+        
+        .volume input {
+            margin-top: 5px;
+        }
+    
+        .create-claim button {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width:700px) {
+        .route-add {
+            margin: 15px 0;
+        }
+    }
+    
+    .button-route button,
+    .route-add button {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .bidding {
+        margin: 0 0 3% 0;
+        width: 100%;
+    }
+    
+    .bidding-title {
+        width: 100%;
+        text-align: center;
+        margin: 25px 0 10px 0;
+        font-size: 20px;
+        color: rgb(182, 119, 241);
+    }
+    
+    @media (max-width: 800px) {
+        .bidding ul {
+            justify-content: center;
+            justify-items: left;
+        }
+    }
+    
+    @media (min-width: 900px) and (max-width: 1050px) {
+        .date-of-delivery {
+            grid-template-columns: 1fr 115px 1fr 1fr;
+            align-items: end;
+        }
+    }
+    
+    @media (min-width: 700px) and (max-width: 1050px) {
+        .route-point > div {
+            display: block;
+        }
+    
+        .WV-TC .weight, .WV-TC .volume {
+            display: inherit;
+        }
+    
+        .deliveryDates label {
+            text-align: center;
+        }
+        
+        .bidding\ ul {
+            grid-template-columns: repeat(4,1fr);
+        }
+        .create-claim button {
+            width: 50%;
+        } 
+    }
+    
+    .bidding ul li {
+        align-items: center;
+    }
+    
+    .bidding ul li input[type=radio] {
+        padding-left: 0;
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2.2px solid lightgray;
+        border-radius: 50%;
+        outline: none;
+    }
+    
+    .bidding ul li input[type='radio']:before {
+        padding-left: 0;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10.2px;
+        margin: 2.5px auto;    
+        border-radius:50%;    
+    }
+    
+    .bidding ul li input[type='radio']:checked:before {
+        background:#ca90d8;
+    }
+    
+    .bidding ul li input[type='radio']:checked {
+        border: 2.2px solid #ca90d8;
+    }
+    
+    
+    /* Кнопка Создать */
+    .create-claim {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .create-claim button {
+        padding: 10px 40px;
+    }
+    
+    .custom-select {
+        width: 239px;
+    }
+    
+    .route-point {
+        grid-template-columns: 30px minmax(150px, 600px) 30px;
+        justify-content: center;
+    }
+    
+    .addr {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .base-label {
+        margin-bottom: 0;
+        font-weight: initial;
+    }
+    </style>
+            <hr>
+            <footer>
+                <p>© 2019 – приложение ASP.NET</p>
+            </footer>
+        </div>
+    
+        <!-- <script src="/TMSMVC/Scripts/jquery-3.3.1.js"></script> -->
+    
+        <script src="js/scripts.js"></script>
+    
+        
+    
+    
+    </body></html>

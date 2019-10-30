@@ -1,0 +1,585 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.create-claim-btn {
+    display: block;
+    clear: both;
+    margin-left: 40%;
+}
+
+hr {
+    clear: both;
+}
+
+h1 {
+    text-align: center;
+}
+
+.lbl {
+    display: block;
+    margin-top: 5px;
+}
+
+.route label {
+    display: block;
+}
+
+.route .btn-success {
+    margin-top: -60px;
+    margin-left: -30px;
+}
+
+.route select {
+    animation: opacityToggle 0.4s;
+}
+
+.add-route-point {
+    position: relative;
+    left: 80px;
+    top: -25px;
+}
+
+.remove-point {
+    margin-left: 300px;
+    margin-top: -220px;
+}
+
+@media (max-width: 450px) {
+    .route .btn-success {
+        margin-top: -96px;
+        margin-left: 300px;
+    }
+}
+
+@keyframes opacityToggle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.claim {
+    margin-top: 50px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.claim-in-list {
+    margin-bottom: 10px;
+}
+
+.registration-form {
+    margin: 0 auto;
+    width: 300px;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.lbl {
+    display: block;
+    margin-top: 5px;
+}
+
+.details-lbl {
+    display: inline-block;
+}
+
+/* Регистрация, Авторизация */
+.register-juridic {
+    display: none;
+}
+
+    .register-private label,
+    .register-juridic label {
+        display: block;
+    }
+
+.field-validation-error {
+    color: red;
+    font-size: 14px;
+}
+
+.registration-form input {
+    margin-right: 5px;
+}
+
+.registration-form label {
+    font-weight: normal;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.register, .authorize {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[name="registered"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+    input[name="registered"]:hover {
+        cursor: pointer;
+    }
+
+/* Страница логиста */
+.logistian-menu li {
+    background: #17a2b8;
+    margin-right: 5px;
+}
+
+    .logistian-menu li a {
+        color: white;
+    }
+
+.logged-in {
+    display: inline-block;
+    text-align: right;
+}
+
+.logged-in-user {
+    margin-top: 20px;
+}
+
+    .logged-in-user a {
+        margin-left: 10px;
+        border-bottom: 1px dotted blue;
+    }
+
+        .logged-in-user a:hover {
+            text-decoration: none;
+        }
+
+/* Создание задания на перевозку */
+input[name="assign"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.route-lbl {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.point {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    width: 190px;
+}
+
+.match-shippers {
+    display: block;
+}
+
+/* Аукцион */
+.bid {
+    width: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding-left: 3px;
+}
+
+.decrease-bid {
+    /*display: inline-block;*/
+}
+
+/* Настройки логиста */
+.logistian-settings {
+    margin: 0 auto;
+}
+
+.setting-type-container {
+    padding-left: 40px;
+}
+
+    .setting-type-container label {
+        font-weight: initial;
+    }
+
+.logistian-settings input[class="form-control"] {
+    width: 50px;
+    text-align: center;
+    margin: -35px 0 20px 300px;
+}
+
+.logistian-settings h1 {
+    margin-bottom: 40px;
+}
+
+/*input шаг аукциона(настройки логиста)*/
+.logistian-settings input[name="DefaultAuctionStep"] {
+    width: 70px;
+    text-align: center;
+    /*margin: -35px 0 20px 300px;*/
+    margin-left: 330px;
+}
+
+.logistian-settings input[type="submit"] {
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+
+input [name="fieldValue"] {
+    display: inline-block;
+    width: 70px;
+}
+
+.trading-settings {
+    margin-top: 50px;
+}
+
+/* В свободном доступе */
+.take-claim, .return-claim-free {
+    display: inline-block;
+}
+
+/* Детали задания на перевозку */
+.details h3 {
+    margin-top: 50px;
+}
+
+/* Календарь */
+.calendar-wrapper {
+    position: absolute;
+    z-index: 1;
+    font-family: arial;
+    width: 220px;
+    background: white;
+    margin-top: 4px;
+    left: 1%;
+}
+
+    .calendar-wrapper table {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .calendar-wrapper span {
+        margin: 0 5px 10px 10px;
+    }
+
+    .calendar-wrapper table caption {
+        position: relative;
+        min-width: 100%;
+        padding: 7px 0;
+        border-radius: 8px 8px 0 0;
+        color: white;
+        text-align: center;
+        background: #f75020;
+    }
+
+    .calendar-wrapper table td {
+        padding: 5px;
+    }
+
+.hours,
+.minutes {
+    margin-bottom: 5px;
+    width: 40px;
+    border: none;
+    outline: none;
+}
+
+.ok {
+    border-radius: 0 0 8px 8px;
+    color: white;
+    background: #f75020;
+    min-width: 100%;
+    border: 0;
+    padding: 5px 0 5px 0;
+}
+
+    .ok:focus, .calendar-wrapper input:focus {
+        outline: 0;
+    }
+
+.previousMonth, .nextMonth, .calendar-wrapper table td, .ok {
+    cursor: pointer;
+}
+
+.previousMonth {
+    position: absolute;
+    left: 0;
+}
+
+.nextMonth {
+    position: absolute;
+    right: 0;
+}
+
+    .nextMonth:hover,
+    .previousMonth:hover {
+        background-color: #de481d;
+    }
+
+.selectedDay {
+    background: #f75020;
+    color: white;
+    border-radius: 20px;
+}
+
+/*|||||||||||||||||||||| Стили Святослава общие |||||||||||*/
+body {
+    background: linear-gradient(-120deg,#d79ce6,#eeecee);
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.body-content {
+    margin: 20px auto;
+    padding: 2% 3%;
+    background: white;
+    width: 70%;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+    h2.title {
+        text-align: center;
+        color: rgb(182, 119, 241);
+        font-weight: 500;
+    }
+
+header {
+    display: grid;
+    grid-template-areas: 'logo user' 'menu menu';
+}
+
+menu {
+    grid-area: menu;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+    menu li {
+        padding: 15px;
+        cursor: pointer;
+        text-align: center;
+        color: rgb(185, 54, 218);
+    }
+
+        menu li.active {
+            background: rgb(182, 119, 241);
+            color: white;
+        }
+
+        menu li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+@media (max-width: 1000px) {
+    .body-content {
+        width: 92%;
+    }
+}
+
+@media (max-width: 800px) {
+    menu li {
+        padding: 15px 10px;
+    }
+}
+
+.user {
+    grid-area: user;
+    display: grid;
+    justify-content: right;
+    align-items: center;
+    grid-template-columns: 50px 150px 50px;
+    cursor: pointer;
+}
+
+    .user .name {
+        color: rgb(185, 54, 218);
+    }
+
+@media (max-width: 600px) {
+    header {
+        grid-template-areas: 'logo' 'user' 'menu';
+    }
+
+    .user {
+        justify-content: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+.user-photo {
+    border-radius: 30px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+/* Checkbox */
+.checkbox {
+    position: relative;
+    margin-right: 20px;
+}
+
+    .checkbox input[type=checkbox] {
+        display: none;
+    }
+
+    .checkbox label:after {
+        content: '';
+        display: block;
+        height: 14px;
+        width: 14px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: -7px;
+        left: 0;
+    }
+
+    .checkbox input[type=checkbox]:checked + label:after {
+        outline: 1px solid rgb(182, 119, 241);
+        ;
+        border: 2px solid rgb(182, 119, 241);
+        width: 10px;
+        height: 10px;
+        background: url(../images/check_mark.png);
+    }
+
+
+/* Custom select */
+.custom-select {
+    font-size: 14px;
+    position: relative;
+    width: 90px;
+    height: 30px;
+}
+
+    .custom-select select {
+        display: none;
+    }
+
+.custom-select-day {
+    width: 80px;
+}
+
+.select-selected {
+    border: 1px solid #a09aa1;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 12px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: rgba(0, 0, 0, 0.5) transparent transparent transparent;
+    }
+
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
+        top: 7px;
+    }
+
+.select-items div, .select-selected {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    user-select: none;
+    padding: 5px;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #ffffff;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: -1px 19px 17px -11px rgba(0, 0, 0, .5);
+}
+
+    .select-items div:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0 0 5px 5px;
+    }
+
+    .select-items div:hover {
+        background-color: rgb(182, 119, 241);
+        color: white;
+    }
+
+.select-hide {
+    display: none;
+}
+
+.base-input,
+.base-select {
+    outline: none;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #a09aa1;
+    border-radius: 5px;
+}
+
+.base-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: rgb(182, 119, 241);
+    color: white;
+    font-size: 16px;
+}
+
+.remove-route-point {
+    margin: 0;
+}
+
